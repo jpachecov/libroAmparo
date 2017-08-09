@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Capitulo } from './capitulos/capitulo';
 import { CAPITULOS } from './capitulos/capitulos';
 import {Http, Response, RequestOptions, ResponseContentType} from '@angular/http';
-import { saveAs } from 'file-saver';
+
 
 @Component({
   selector: 'app-root',
