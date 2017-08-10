@@ -10,25 +10,8 @@
 
 </div>
 
-<div class="contenido-capitulo" *ngIf="capituloSel else home">
-	<h3>{{capituloSel.nombre}}</h3>
-	<p>{{capituloSel.resumen}}</p>
-	<ul>
-		<li *ngFor="let archivo of capituloSel.listaArchivos">
-			<span (click)="descarga(archivo)">{{archivo}}</span>
-		</li>
-
-	</ul>
-</div>
-
-<ng-template #home>
-	<div>
-		Bienvenidos	
-	</div>
-
-</ng-template>
-
-<!--<contenido-capitulo></contenido-capitulo>-->
+<contenido-capitulo [capituloSel]="capituloSel"></contenido-capitulo>
+<detalle-profesora></detalle-profesora>
 
 
 
