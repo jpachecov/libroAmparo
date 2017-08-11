@@ -1,0 +1,16 @@
+.contenido-capitulo {
+	display: inline-block;
+	position: relative;
+	width: calc(100% - 300px - 250px);
+	vertical-align: top;
+	margin-left: 300px;
+	margin-right: 250px;
+}
+
+.contenido-capitulo h3 {
+	font-family: sans-serif;
+}
+
+.contenido-capitulo p {
+	font-family: sans-serif;
+}

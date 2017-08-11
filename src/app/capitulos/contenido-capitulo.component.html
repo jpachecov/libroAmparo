@@ -3,7 +3,7 @@
 	<p>{{capituloSel.resumen}}</p>
 	<ul>
 		<li *ngFor="let archivo of capituloSel.listaArchivos">
-			<a href="assets/archivos/capitulo_{{capituloSel.id}}/{{archivo}}" download>{{archivo}}</a>
+			<a href="assets/archivos/capitulo_{{capituloSel.id}}/{{archivo.ruta}}" download>{{archivo.nombre}}</a>
 		</li>
 	</ul>
 </div>

@@ -1,17 +1,18 @@
 <app-header></app-header>
-<div class="menu-capitulos">
+<div class="container">
 	
-	<h3>{{titulo}}</h3>
-	<ul>
-		<li *ngFor="let capitulo of capitulos" (click)="onSelect(capitulo)">
-			<span>{{capitulo.id}} . {{capitulo.nombre}}</span>
-		</li>
-	</ul>
+	<div class="menu-capitulos">
+		
+		<h3>{{titulo}}</h3>
+		<ul>
+			<li *ngFor="let capitulo of capitulos" (click)="onSelect(capitulo)">
+				<span>{{capitulo.id}} . {{capitulo.nombre}}</span>
+			</li>
+		</ul>
+
+	</div><!--
+
+	--><contenido-capitulo [capituloSel]="capituloSel"></contenido-capitulo><!--
+	--><detalle-profesora></detalle-profesora>
 
 </div>
-
-<contenido-capitulo [capituloSel]="capituloSel"></contenido-capitulo>
-<detalle-profesora></detalle-profesora>
-
-
-
