@@ -9,7 +9,8 @@ import {Http, Response, RequestOptions, ResponseContentType} from '@angular/http
 })
 
 export class ContenidoCapitulo {
-
+	tituloLibro = "Introducción al desarrollo de programas con Java";
+	edicion = "Tercera edición";
 	titulo = "Resumen del capítulo";
 	@Input() capituloSel:Capitulo;
 }

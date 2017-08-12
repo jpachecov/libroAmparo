@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  tituloLibro = 'Introducción a la programación en java Hola!';
+  tituloLibro = 'Introducción al desarrollo de programas con Java';
 }

@@ -1,6 +1,7 @@
 header {
 	width:100%;
-	height: 150px;
+	height: 100px;
+	position: relative;
 }
 
 header > ul {
@@ -16,7 +17,7 @@ header > ul li {
 .picasso{
 	display: inline-block;
 	width:300px;
-	height: 150px;
+	height: 100px;
 	background-position: 50% 50%;
 	background-size: cover;
 }
@@ -31,4 +32,14 @@ header > ul li {
 .tituloLibro::before{
 	content: "";
 	display: block;
+}
+
+.titulo {
+	vertical-align: top;
+	height: 100%;
+}
+.titulo h1 {
+	font-size: 25px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
 }

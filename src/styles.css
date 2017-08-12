@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+	margin: 0px;
+}
+ul {
+	margin: 0px;
+}
+
+* {
+	transition: 0.2s ease-out;
+}

@@ -4,4 +4,5 @@ export class Profesor {
 	email : string;
 	telefono:string;
 	cita:string;
+	foto:string;
 }
