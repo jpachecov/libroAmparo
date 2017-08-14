@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 /**
  *  Clase para simular el funcionamiento de un maquina expendedora de boletos
- *  @author Amparo López Gaona
- *  @version  2da. ed.
+ *  @author  Amparo López Gaona
+ *  @version Tercera edición
  */ 
 class MaquinaBoletos {
     private int totalBoletos;

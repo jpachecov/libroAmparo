@@ -1,8 +1,8 @@
 /**
  * Clase que implementa a los empleados como subclase de personas.
  * Objetivo: ilustrar el uso de clases abstractas
- * @author  Amparo Lopez Gaona
- * @version Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 abstract public class Empleado extends Persona {
   protected double pago;

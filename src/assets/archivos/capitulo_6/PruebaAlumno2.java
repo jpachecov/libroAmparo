@@ -1,8 +1,8 @@
 /**
  * Programa para probar la clase Alumno con arreglos como parámetro y como valor
  * de retorno
- * @author Amparo Lopez Gaona
- * @varsion Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 class PruebaAlumno {
 

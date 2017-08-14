@@ -1,7 +1,7 @@
 /**
  * Programa para probar el usi de polimorfismo con interfaces
- * @author Amparo Lopez Gaona
- * @version Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 class PruebaPolimorfismoInterfaces{
 

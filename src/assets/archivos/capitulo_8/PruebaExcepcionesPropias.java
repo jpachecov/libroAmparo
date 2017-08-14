@@ -3,8 +3,8 @@ import java.util.Scanner;
 /**
 * Clase para probar las excepciones creadas para manejo de cuentas bancarias
 * 
-* @author Amparo Lopez Gaona
-* @version 2da. ed.
+* @author  Amparo López Gaona
+* @version Tercera edición
 *
 */
 public class PruebaExcepcionesPropias{

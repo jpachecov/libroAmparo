@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 /**
  * Programa para probar la jerarquia de cuentas
- * @author Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class UsaCuentas {
   static double  capital;

@@ -1,9 +1,9 @@
 /**
  * Clase para manejar cuentas bancarias con la posibilidad de pagar
  * el telefono.
- * @author  Amparo Lopez Gaona
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  * @see     Cuenta
- * @version 2da. ed.
  */
 public class CuentaConServicios extends Cuenta {
     /**

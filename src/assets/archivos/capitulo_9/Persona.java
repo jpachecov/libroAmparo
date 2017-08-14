@@ -2,8 +2,8 @@
  *
  * Clase para alamacenar y manipular informacion de personas
  *
- * @author Amparo Lopez Gaona 
- * @version Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  *
  */
 public class Persona{

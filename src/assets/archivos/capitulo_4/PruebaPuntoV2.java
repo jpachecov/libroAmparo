@@ -1,7 +1,7 @@
 /**
  *  Clase para probar la clase Punto
- * @author Amparo López Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class PruebaPuntoV2 {
   public static void main(String [] pps) {

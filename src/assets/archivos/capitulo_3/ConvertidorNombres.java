@@ -2,8 +2,8 @@ import java.util.Scanner;
 /**
  * Programa sencillo para que convierta nombres de un formato a otro.
  * Objetivo Trabajar con objetos de la clase String.
- * @author  Amparo Lopez Gaona
- * @version Segunda edicion
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class ConvertidorNombres {                                    
 

@@ -1,7 +1,7 @@
 /**
  * Clase para trabajar con puntos en plano Cartesiano
- * @author Amparo L&oacute;pez  Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class Punto {            
                             //    Atributos

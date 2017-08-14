@@ -1,7 +1,7 @@
 /**
  * Programa que ilustra la diferencia entre referencia y objeto.
- * @author  Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class Diferencia {
   public static void main (String [] pps) {

@@ -2,7 +2,7 @@ import java.util.Comparator;
 /**
  * Clase para determinar el mayor de un arreglo de objetos.
  * @author  Amparo López Gaona
- * @version Noviembre 2010
+ * @version Tercera edición
  */
 class ObjetoMayor {
   private Object [] arreglo;

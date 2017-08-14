@@ -1,7 +1,7 @@
 /**
  * Clase para registrar los datos de un libro
- * @author  Amparo Lopez Gaona
- * @version Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  * @see Obra
  */
 public class Libro extends Obra {

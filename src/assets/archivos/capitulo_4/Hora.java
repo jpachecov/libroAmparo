@@ -1,7 +1,7 @@
 /**
  *  Clase para trabajo con horas.
- * @author Amparo L&oacute;pez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 
 public class Hora {

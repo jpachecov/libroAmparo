@@ -1,8 +1,8 @@
 /**
  * Clase que implementa a la subclase de los empleados por horas.
  * Objetivo: ilustrar el uso de clases abstractas
- * @author  Amparo Lopez Gaona
- * @version  Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class PorHoras extends Permanente {
   private double horasTrabajadas;

@@ -1,8 +1,8 @@
 /**
  * Clase para manejar cuentas bancarias
  * Objetivo: ilustrar el uso de excepciones
- * @author Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 class Cuenta {
   protected double disponible;

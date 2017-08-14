@@ -1,8 +1,8 @@
 /**
 * Interfaz para definir el comportamiento de objetos capaces de resolver problemas
 * 
-* @author Amparo Lopez Gaona
-* @version Noviembre 2010
+* @author  Amparo López Gaona
+* @version Tercera edición
 *
 */
 public interface Solucionable{

@@ -1,7 +1,7 @@
 /**
  * Excepcion para creditos no autorizados
- * @author Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 class ExcepcionCreditoNoAutorizado extends ExcepcionBancaria {
 

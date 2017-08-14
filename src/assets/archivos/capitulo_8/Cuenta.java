@@ -1,7 +1,7 @@
 /**
  * Clase para manejar cuentas bancarias. Utilizando excepciones
- * @author Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class Cuenta {
   protected double disponible;

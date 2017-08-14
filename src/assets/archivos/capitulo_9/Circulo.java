@@ -2,8 +2,8 @@
 *
 * Clase de circulos que pueden escalarse
 *
-* @author Amparo Lopez Gaona
-* @version Noviembre 2010
+* @author  Amparo López Gaona
+* @version Tercera edición
 */
 public class Circulo implements Inflable{
   private Punto centro;

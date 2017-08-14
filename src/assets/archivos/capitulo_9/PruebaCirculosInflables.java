@@ -1,7 +1,7 @@
 /**
  * Programa para probar referencias a interfaces
- * @author Amparo Lopez Gaona
- * @version Noviembre 2011
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class PruebaCirculosInflables{
 

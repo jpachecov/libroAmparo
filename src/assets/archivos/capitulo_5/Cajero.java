@@ -4,8 +4,8 @@ import java.util.Scanner;
  *  Clase para simular el funcionamiento de una cajero de dinero de un 
  *  establecimiento.
  *  @see Caja
- *  @author Amparo L&oacute;pez Gaona
- *  @version  2da. ed.
+ *  @author  Amparo López Gaona
+ *  @version Tercera edición
  */ 
 public class Cajero {
   private Caja miCaja;

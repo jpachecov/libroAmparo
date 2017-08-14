@@ -1,7 +1,7 @@
 /**
  * Excepcion para el caso de falta de fondos
- * @author Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 class ExcepcionFaltaDeFondos extends ExcepcionBancaria {
 

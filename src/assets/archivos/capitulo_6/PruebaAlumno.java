@@ -1,7 +1,7 @@
 /**
  * Programa para probar la clase Alumno e introducir la instruccion switch
- * @author Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 class PruebaAlumno {
   static Alumno alumnoPrueba = null;   //Alumno del cual se pedirá informacion

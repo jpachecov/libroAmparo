@@ -1,8 +1,8 @@
 /**
  *  Clase para simular el funcionamiento de una caja de dinero de un
  *  establecimiento.
- *  @author  Amparo Lopez Gaona
- *  @version 2da. ed.
+ *  @author  Amparo López Gaona
+ *  @version Tercera edición
  */
 public class Caja {
   private double totalAcumulado;      // Dinero totalAcumulado en el dia.

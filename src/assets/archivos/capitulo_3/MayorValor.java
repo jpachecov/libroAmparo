@@ -1,8 +1,8 @@
-/*
+/**
  *  Programa que determina el mayor de tres valores de un dado, al ser lanzado
  *  cada vez por un jugador distinto.
- *  @author  Amparo Lopez Gaona
- *  @version Segunda edicion
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 import java.util.Scanner;
 

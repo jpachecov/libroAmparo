@@ -2,8 +2,8 @@
  * Clase para trabajar cuentas de credito. Este tipo de cuentas tienen ademas
  * de un saldo o cantidad disponible, un limite de credito y la cantidad que 
  * se adeuda
- * @author Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  * @see Cuenta
  */
 public class CuentaDeCredito extends Cuenta {

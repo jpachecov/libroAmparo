@@ -1,8 +1,8 @@
 /**
  * Clase que implementa a la subclase de los empleados temporales
  * Objetivo: ilustrar el uso de clases abstractas
- * @author   Amparo Lopez Gaona
- * @version  Abril 2006
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class Temporal extends Empleado {
 

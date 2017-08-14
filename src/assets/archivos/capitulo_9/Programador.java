@@ -2,8 +2,8 @@
 *
 * CLase para almacenar y manipular informacion de programadores
 *
-* @author Amparo Lopez Gaona
-* @version Noviembre 2010
+* @author  Amparo López Gaona
+* @version Tercera edición
 *
 */
 public class Programador extends Persona implements Solucionable{

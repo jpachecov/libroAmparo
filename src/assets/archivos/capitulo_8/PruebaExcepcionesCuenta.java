@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+*
+* Clase para probar las excepciones creadas.
+* @author  Amparo López Gaona
+* @version Tercera edición
+*/
 public class PruebaExcepcionesCuenta {
   static public void main(String pps[]) {
       Cuenta cuenta = null; 

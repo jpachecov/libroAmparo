@@ -3,8 +3,8 @@ import java.util.Scanner;
 /**
  * Programa para enviar una felicitacio personalizada.
  * Objetivo Mostrar como se crean y usan objetos de distintas clases.
- * @author  Amparo L0pez Gaona
- * @version Segunda edicion
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class FelicitacionPersonalizada {                                    
   public static void main (String [] pps) {

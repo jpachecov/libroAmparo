@@ -1,7 +1,7 @@
 /**
  * Clase que programa el manejo de la información de alumnos en una escuela.
- * @author Amparo López Gaona
- * @version Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 class SeccionEscolar {
   Alumno [] poblacionEst ;

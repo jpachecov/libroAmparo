@@ -2,8 +2,8 @@ import java.util.Scanner;
 /**
  * Programa para que el usuario juegue volados con la computadora.
  * Objetivo Mostrar como se crean y usan objetos de distintas clases.
- * @author  Amparo Lopez Gaona
- * @version Segunda edicion
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class Volados {
 

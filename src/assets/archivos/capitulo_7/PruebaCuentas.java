@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+* Clase de pruebas para la clase Cuenta
+* @author  Amparo López Gaona
+* @version Tercera edición
+*/
 public class PruebaCuentas{
 
   static Cuenta cuenta = null;

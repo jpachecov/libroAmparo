@@ -1,7 +1,7 @@
 /**
  * Excepcion para depositos negativos
- * @author Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class ExcepcionDepositoNegativo extends ExcepcionBancaria {
 

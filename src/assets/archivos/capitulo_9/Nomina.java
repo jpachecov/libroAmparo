@@ -1,8 +1,9 @@
-/** Programa que prueba el funcionamiento de la
+/** 
+ * Programa que prueba el funcionamiento de la
  * jerarquía de herencia. En él se crea un arreglo de empleados y se llena
  * con empleados de diferente clase.
- * @author  Amparo Lopez Gaona
- * @version Noviembre de 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class Nomina {
 

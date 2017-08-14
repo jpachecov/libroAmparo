@@ -1,7 +1,7 @@
 /**
  * Clase para registrar los datos de una tesis
- * @author  Amparo Lopez Gaona
- * @version 2da. ed.
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  * @see Obra
  */
 public class Tesis extends Obra {

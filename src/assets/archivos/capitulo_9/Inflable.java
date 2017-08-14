@@ -1,6 +1,7 @@
 /**
  * Interfaz inflable
- * @author Amparo Lopez Gaona
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public interface Inflable{
     public void inflar(int cuanto);

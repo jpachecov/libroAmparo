@@ -1,9 +1,9 @@
 /**
-  Clase para crear líneas rectas en el plano Cartesiano
-  Objetivo: ilustrar la relación de agregación entre objetos.
-  @author  Amparo López Gaona
-  @see     Punto
-  @version 2da. ed.
+ * Clase para crear líneas rectas en el plano Cartesiano
+ * Objetivo: ilustrar la relación de agregación entre objetos.
+ * @author  Amparo López Gaona
+ * @version Tercera edición  
+ * @see     Punto
 */
 class Linea {
                         //Estructura

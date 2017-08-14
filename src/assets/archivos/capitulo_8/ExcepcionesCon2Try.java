@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/**
+*
+* Clase en la que se cachan excepciones usando bloques try-catch distintos.
+*
+* @author  Amparo López Gaona
+* @version Tercera edición
+*/
 public class ExcepcionesCon2Try {
   static public void main(String pps[]) {
     Cuenta cuenta = new Cuenta(3000);

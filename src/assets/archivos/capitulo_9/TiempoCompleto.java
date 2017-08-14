@@ -1,8 +1,8 @@
 /**
  * Clase que implementa a la subclase de los empleados de tiempo completo
  * Objetivo: ilustrar el uso de clases abstractas
- * @author   Amparo Lopez Gaona
- * @version   Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
 public class TiempoCompleto extends Permanente {
   private double pagoQuincenal;       

@@ -2,7 +2,8 @@
  * Programa que ilustra la diferencia entre referencia y objeto.
  *
  * @author  Amparo López Gaona
- * @version Noviembre 2010
+ * @version Tercera edición
+ * @since Noviembre 2010
  */
 public class DiferenciaV2 {
 

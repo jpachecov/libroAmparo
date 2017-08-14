@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Clase de Alumnos para almacenar con información de alumnos 
  *
  * @author  Amparo López Gaona
- * @version 2da. ed.
+ * @version Tercera edición
  */
 
 class Alumno {

@@ -2,7 +2,7 @@
  * Programa para ilustrar el paso de parametros por valor
  *
  * @author  Amparo López Gaona
- * @version 2da. ed.
+ * @version Tercera edición
  */ 
 public class Cambios{
 

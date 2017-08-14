@@ -1,7 +1,7 @@
 /**
  * Programa para probar la clase Alumno e introducir parametros al main
- * @author Amparo Lopez Gaona
- * @version Noviembre 2010
+ * @author  Amparo López Gaona
+ * @version Tercera edición
  */
   class PruebaAlumno{
 

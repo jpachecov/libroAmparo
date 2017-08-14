@@ -2,8 +2,8 @@
 *
 * Clase para almacenar y manipular informacion de personas comunes
 *
-* @author Amparo Lopez Gaona
-* @version Noviembre 2010
+* @author  Amparo López Gaona
+* @version Tercera edición
 *
 */
 public class PersonaComun extends Persona {

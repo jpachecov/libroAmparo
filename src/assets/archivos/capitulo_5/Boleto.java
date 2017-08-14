@@ -1,7 +1,7 @@
 /**
  *  Clase para generar boletos para acceso al Metro.
- *  @author Amparo López Gaona
- *  @version  2da. ed.
+ *  @author  Amparo López Gaona
+ *  @version Tercera edición
  */ 
 class Boleto {
   private final double precio;    // Precio del boleto
