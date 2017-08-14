@@ -5,7 +5,7 @@
     height: 100%;
     right: 0px;
     top: 0px;
-    padding: 30px 10px 98px 10px;
+    padding: 0px 10px 98px 10px;
     border: solid 1px #d6d3d3;
     background: white;
 }
@@ -47,16 +47,22 @@
 .imagenes-escudos div{
 	display: inline-block;
 	width: 50%;
+	height: 100px;
+	border-bottom: solid 1px #822727;
 }
+
+
 #logo-unam img{
 	display: block;
 	width: 60%;
 	float: none;
 	margin: auto;
+	margin-top: 16px;
 }
 #logo-ciencias img{
 	display: block;
 	width: 60%;
 	float: none;
 	margin: auto;
+	margin-top: 16px;
 }
