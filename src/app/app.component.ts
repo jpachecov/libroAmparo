@@ -9,6 +9,7 @@ import { CAPITULOS } from './capitulos/capitulos';
   styleUrls: ['./app.component.css', '../font-awesome-4.7.0/css/font-awesome.min.css']
 })
 export class AppComponent {
+  tituloLibro = 'Introducción al desarrollo de programas con Java. Tercera edición';
   titulo = 'Capítulos';
   capitulos = CAPITULOS;
   capituloSel : Capitulo;

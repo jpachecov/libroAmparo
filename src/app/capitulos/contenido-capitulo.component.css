@@ -8,7 +8,7 @@ h3,h4{
     position: relative;
     vertical-align: top;
     margin: auto;
-    height: 100%;
+    height: 100%;   
 }
 
 .contenido-capitulo h3 {
@@ -24,6 +24,7 @@ h3,h4{
 
 .shadow {
     padding-top: 120px;
+    padding-bottom: 100px;
 }
 
 #titulo-libro{

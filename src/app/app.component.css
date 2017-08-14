@@ -4,13 +4,14 @@
 }
 
 .menu-capitulos {
-	position: absolute;
+	position: fixed;
 	top:0px;
 	display: inline-block;
 	width: 300px;
 	height: 100vh;
 	z-index: 100;
 	border-right: solid 1px #cacaca;
+	background: white;
  /**   
 -webkit-box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
 -moz-box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
@@ -95,4 +96,28 @@ Contenedor capitulos
     font-weight: 400;
     font-size: 15px;
     font-family: 'Quicksand', sans-serif;
+}
+
+footer{
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background: white;
+	bottom: 0px;
+	z-index: 50;
+	border-top: solid 1px #cacaca;
+}
+footer div {
+	width: 50%;
+	float: none;
+	margin: 0 auto;
+}
+
+footer h4 {
+	text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 30px 0 0 0;
 }

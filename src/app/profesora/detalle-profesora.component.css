@@ -1,21 +1,32 @@
 .detalle-profesor{
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     width: 200px;
+    height: 100%;
     right: 0px;
     top: 0px;
-    padding: 29px 10px 98px 10px;
+    padding: 30px 10px 98px 10px;
     border: solid 1px #d6d3d3;
+    background: white;
+}
+
+#datos-profa{
+	padding: 60px 0px;	
 }
 
 .detalle-profesor h3 {
 	text-align: center;
-	font-family: sans-serif;
+	font-family: 'Playfair Display', serif; 
+	color: #822727;
+	font-size: 24px;
 }
 
 #nombre {
 	display: block;
 	text-align: center;
-	font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
 	padding: 25px 0px;
 }
 
@@ -31,4 +42,21 @@
 
 .circle img {
 	width: 100%;
+}
+
+.imagenes-escudos div{
+	display: inline-block;
+	width: 50%;
+}
+#logo-unam img{
+	display: block;
+	width: 60%;
+	float: none;
+	margin: auto;
+}
+#logo-ciencias img{
+	display: block;
+	width: 60%;
+	float: none;
+	margin: auto;
 }
