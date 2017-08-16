@@ -1,36 +1,25 @@
-
 <div class="container">
 	<!--<app-header></app-header>-->
 	<header class="menu-capitulos">
-
 		<div class="cont-pic">
 			<a href="/" class="picasso" [ngStyle]="{'background-image': 'url(assets/la_cocina.JPG)'}">
 			</a>			
 		</div>
 		<i class="fa fa-times close-menu" aria-hidden="true"></i>
 		<div class="cont-caps">
-			
-			<h3>{{titulo}}</h3>
+			<h3>Capítulos</h3>
 			<ul id="lista-capitulos">
-				<li *ngFor="let capitulo of capitulos" (click)="onSelect(capitulo)">
+				<li *ngFor="let capitulo of libro.capitulos" (click)="onSelect(capitulo)">
 					<span [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}. {{capitulo.nombre}}</span>
 				</li>
 			</ul>
-
 		</div>
-
 	</header><!--
-
 	--><contenido-capitulo [capituloSel]="capituloSel"></contenido-capitulo><!--
 	--><detalle-profesora></detalle-profesora>
-
-
 </div>
-
 <footer>
-	
 	<div>
 		<h4>Desarrollado por Jean Pierre Pacheco Avila. 2017.</h4>
 	</div>
-
 </footer>

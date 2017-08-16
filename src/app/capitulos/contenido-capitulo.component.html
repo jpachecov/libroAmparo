@@ -1,12 +1,13 @@
 <div class="contenido-capitulo" *ngIf="capituloSel">
 
 	<div class="shadow">
-		<h3 id="titulo-libro">{{tituloLibro}}</h3>
-		<h4 id="edicion">{{edicion}}</h4>
+		<h3 id="titulo-libro">{{libro.titulo}}</h3>
+		<h4 id="edicion">{{libro.edicion}}</h4>
 		<h3 id="titulo-cap">{{capituloSel.id}}. {{capituloSel.nombre}}</h3>
 		<p id="resumen">{{capituloSel.resumen}}</p>
-		<ul>
+		<ul id="lista-archivos">
 			<li *ngFor="let archivo of capituloSel.listaArchivos">
+				<i class="fa fa-file-code-o" aria-hidden="true"></i>
 				<a href="assets/archivos/capitulo_{{capituloSel.id}}/{{archivo.ruta}}" download>{{archivo.nombre}}</a>
 			</li>
 		</ul>		

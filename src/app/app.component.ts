@@ -1,21 +1,28 @@
 import { Component } from '@angular/core';
 import { Capitulo } from './capitulos/capitulo';
-import { CAPITULOS } from './capitulos/capitulos';
-
+import { Libro } from './libro/libro';
+import { LibroService } from './servicios/libros-service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css', '../font-awesome-4.7.0/css/font-awesome.min.css']
+  styleUrls: [
+    './app.component.css',
+    'responsive/menu.responsive.css',
+    'responsive/footer.responsive.css',
+    '../font-awesome-4.7.0/css/font-awesome.min.css'
+  ]
 })
 export class AppComponent {
-  tituloLibro = 'Introducción al desarrollo de programas con Java. Tercera edición';
-  titulo = 'Capítulos';
-  capitulos = CAPITULOS;
+
+  libro: Libro;
   capituloSel : Capitulo;
 
   onSelect(capitulo : Capitulo) : void {
-    	console.log("Capitulo Seleccionado");
       this.capituloSel = capitulo;
+  }
+
+  constructor(private libroService:LibroService){
+    this.libro = this.libroService.getLibroAmparo();
   }
 }

@@ -10,7 +10,7 @@ import { HttpModule }    from '@angular/http';
 
 import { HeaderComponent } from './header/header.component';
 import { AppComponent } from './app.component';
-
+import { LibroService } from './servicios/libros-service';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     HttpModule
   ],
-  providers: [],
+  providers: [LibroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

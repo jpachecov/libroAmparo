@@ -1,0 +1,11 @@
+@media (max-width: 700px) {
+	.detalle-profesor{
+		display: none;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+	.detalle-profesor {
+		display: none;
+	}
+}
