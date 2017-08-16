@@ -60,7 +60,7 @@ Imagen de menu picasso
 
 .picasso{
 	display: inline-block;
-	width:300px;
+	width:100%;
 	height: 100px;
 	background-position: 50% 50%;
 	background-size: cover;

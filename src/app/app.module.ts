@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DetalleProfesor } from './profesora/detalle-profesora.component';
 import { ContenidoCapitulo } from './capitulos/contenido-capitulo.component';
@@ -21,6 +22,7 @@ import { LibroService } from './servicios/libros-service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule
   ],
   providers: [LibroService],
