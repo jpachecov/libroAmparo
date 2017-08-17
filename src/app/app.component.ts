@@ -12,6 +12,7 @@ import {
 import { Capitulo } from './capitulos/capitulo';
 import { Libro } from './libro/libro';
 import { LibroService } from './servicios/libros-service';
+import { Router } from '@angular/router';
 
 
 
@@ -47,6 +48,7 @@ export class AppComponent {
   menuState:string = "activo";
   onSelect(capitulo : Capitulo) : void {
       this.capituloSel = capitulo;
+      this.router.navigate(['/capitulo', this.capituloSel.id]);
   }
 
   mueveMenu(): void {
@@ -56,7 +58,7 @@ export class AppComponent {
       this.menuState = "activo";
     }
   }
-  constructor(private libroService:LibroService){
+  constructor(private libroService:LibroService, private router: Router){
     this.libro = this.libroService.getLibroAmparo();
   }
 }

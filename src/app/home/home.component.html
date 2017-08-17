@@ -1,0 +1,46 @@
+<div class="home-page contenido-capitulo">
+	
+	<div class="shadow">
+		<h3 id="titulo-libro">{{libro.titulo}}</h3>
+		<h4 id="edicion">{{libro.edicion}}</h4>
+		<h3 id="titulo-libro">Bienvenido</h3>
+		<p>
+			"Introducción al desarrollo de programas con Java" es un libro escrito por la Dra. Amparo López Gaona, profesora titular de la Facultad de Ciencias de la Universidad Nacional Autónoma de México.
+		</p>
+		<p>
+			En este sitio, podrás encontrar el material de apoyo para esta obra, el cual se compone de archivos fuente con código en java que contienen las clases más importantes construidas y estudiadas a lo largo del libro.
+		</p>
+		<h3>Introducción</h3>
+		<p>
+			Aprender a programar es una tarea difícil debido, entre otras cosas, a que no existe un procedimiento para ello. Para aprender a programar, es necesario escribir programas, no basta con leer o entender programas ya escritos, es necesario enfrentar el reto de programar, tener tropiezos en el camino y aprender de ellos. Para lograrlo se debe de aprender a analizar un problema, descomponerlo en sus partes y esbozar una solución. Una vez que se tiene el esbozo de solución, se puede proceder a escribir en un lenguaje de programación los pasos que se deben de seguir para llegar a la solución del problema. En el caso de la programación orientada a objetos, éstos pasos deben contener instrucciones que impliquen la interacción de objetos a través de mensajes.	
+		</p>
+		<p>
+			Este libro tiene como objetivo introducir al lector al mundo de la programación orientada a objetos utilizando el lenguaje Java. El libro está escrito para principiantes en programación. La mayoría de los libros acerca del tema se centran en explicar los aspectos sintácticos y semánticos de las construcciones en Java a través de porciones de programas o pequeños programas para ilustrar la construcción en turno, obviando la etapa de diseño. Por su parte, el tema de diseño es suficientemente amplio para escribir un libro, además, para que se note la utilidad del diseño, los libros del tema están enfocados al desarrollo de grandes programas denominados sistemas y los autores asumen conocimiento del lenguaje de programación.
+		</p>
+		<p>
+			En este libro se muestra el proceso de programación, no se limita a mostrar los programas ya terminados. De acuerdo con mi experiencia en la enseñanza de programación considero más apropiado este enfoque para lograr el aprendizaje de tal proceso. Todos los capítulos excepto los dos primeros, se desarrollan alrededor de casos de estudio. Para ello se utiliza una metodología de programación, que incluye la etapa de diseño de los programas para que el lector tenga más herramientas para desarrollar sus propios programas. Como se mencionó anteriormente, el tema de diseño de programas requiere de mucho tiempo para estudiarlo a fonde, por lo que se ha optado por presentar una versión simplificada de tal proceso pero suficiente para el propósito del libro.
+		</p>
+		<p>
+			Este libro no es un manual de Java, sin embargo, contiene lo básico para desarrollar programas que creen objetos e interactúen mediante el intercambio de mensajes, y en caso necesario desarrollar las clases para generar dichos objetos. La forma en la que se introducen los conceptos en esta obra es mostrando y explicando su necesidad, luego especificando cómo se trabaja este concepto en Java y, finalmente, desarrollando un programa que lo utilice: en algunos casos pueden surgir soluciones alternativas, las cuales se analizan y se explican sus ventajas o desventajas. El resultado es un libro donde todos los programas están completos, ampliamente explicados y documentados para su mayor comprensión.
+		</p>
+		<p>
+			Otro aspecto que se resalta a lo largo del libro es la importancia de desarrollar programas robustos, es decir, programas que estén preparados para trabajar aún en situaciones anómalas, sin importar qué tan incorrectos o poco plausibles sean los datos de entrada. Todos los programas desarrollados en este libro son robustos.
+		</p>
+		<p>
+			En esta segunda edición el diseño de los problemas planteados es más detallado que en la primera edición. Se introdujo la clase Error para que el programador principiante maneje los errores que pueda tener su programa al momento de ejecutarlo. Tambié se dedica un capítulo completo al manejo de errores a través de excepciones. Se profundizó en la presentació del tema de interfaces. Se tiene un capítulo detallado para el tema de la serialización de objetos. Para la lectura de datos proporcionados por el usuario Scanner incluida a partir de Java 5.0.
+		</p>
+
+		<p>
+			Este libro ha sido dividido en los siguientes Capítulos:
+		</p>
+
+		<ul id="lista-capitulos">
+			<li *ngFor="let capitulo of libro.capitulos">
+				<i class="fa fa-file-text-o" aria-hidden="true"></i>
+				<a [routerLink]="['/capitulo', capitulo.id]">Capítulo {{capitulo.id}}. {{capitulo.nombre}}</a>
+			</li>
+		</ul>
+
+	</div>
+
+</div>
