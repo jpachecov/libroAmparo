@@ -4,7 +4,7 @@ h3,h4{
 .contenido-capitulo {
     display: block;
     float: none;
-    padding: 0 350px;
+    padding: 0 235px 350px 350px;
     position: relative;
     vertical-align: top;
     margin: auto;
@@ -54,7 +54,7 @@ Avenir,Tahoma,sans-serif
 #resumen {
     font-weight: 400;
     font-size: 15px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Droid Serif', serif;/*'Zilla Slab', serif*/;/*'Quicksand', sans-serif;*/
 }
 #lista-archivos{
     list-style: none;

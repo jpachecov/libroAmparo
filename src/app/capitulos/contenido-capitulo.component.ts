@@ -1,4 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
+
 import { Capitulo } from './capitulo';
 import { LibroService } from '../servicios/libros-service';
 import { Libro } from '../libro/libro';
@@ -14,7 +22,21 @@ import 'rxjs/add/operator/switchMap';
 		'./contenido-capitulo.component.css',
 		'../responsive/capitulos.responsive.css',
 		'../../font-awesome-4.7.0/css/font-awesome.min.css'
-	]
+	],
+	animations:[
+    trigger('menuState', [
+      state('activo', style({
+        transform:'translateX(0)'
+      })),
+      state('inactivo', style({
+        transform:'translateX(-350px)',
+        opacity:0,
+        display:'none'
+      })),
+      transition('activo => inactivo', animate('300ms ease-out')),
+      transition('inactivo => activo', animate('300ms ease-in'))
+    ])
+  ]
 })
 
 export class ContenidoCapitulo implements OnInit{
