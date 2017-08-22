@@ -29,7 +29,18 @@
     font-family: 'Quicksand', sans-serif;
 	padding: 25px 0px;
 }
-
+#mail {
+	display: block;
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+#telefono {
+	display: block;
+	font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
 .circle {
 	width: 100px;
 	height: 100px;

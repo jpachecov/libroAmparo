@@ -74,7 +74,7 @@ Imagen de menu picasso
 	float: right;
 	cursor: pointer;
 	padding: 10px;
-	font-size: 20px !important;
+	font-size: 25px !important;
 	color:#822727;
 }
 
@@ -125,3 +125,25 @@ footer h4 {
 
 
 
+/***
+
+Para las animaciones
+
+*/
+.ham {
+	display: none !important;
+	float: right;
+	cursor: pointer;
+	padding: 13px;
+	font-size: 25px !important;
+	color:#822727;
+}
+.menu-hide .close-menu {
+	display: none;
+}
+.menu-hide .cont-caps {
+	display: none;
+}
+.menu-hide .ham { 
+	display: block !important;
+}

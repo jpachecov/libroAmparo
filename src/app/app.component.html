@@ -1,6 +1,6 @@
 <div class="container">
 	<!--<app-header></app-header>-->
-	<header class="menu-capitulos" [@menuState]="menuState">
+	<header class="menu-capitulos" >
 		<div class="cont-pic">
 			<a href="/" class="picasso" [ngStyle]="{'background-image': 'url(assets/la_cocina.JPG)'}">
 			</a>			
@@ -8,8 +8,9 @@
 		<i
 			class="fa fa-times close-menu" 
 			aria-hidden="true"
-			(click)="mueveMenu()"
+			(click)="hideMenu()"
 		></i>
+		<i class="fa fa-bars ham" (click)="showMenu()" aria-hidden="true"></i>
 		<div class="cont-caps">
 			<h3>Capítulos</h3>
 			<ul id="lista-capitulos">
@@ -19,7 +20,7 @@
 			</ul>
 		</div>
 	</header><!--
-	--><router-outlet  [@menuState]="menuState"></router-outlet>
+	--><router-outlet></router-outlet>
 	<!--<contenido-capitulo [capituloSel]="capituloSel"></contenido-capitulo>--><!--
 	--><detalle-profesora></detalle-profesora>
 </div>
