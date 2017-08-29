@@ -4,8 +4,8 @@ import java.util.Scanner;
 *
 * Clase en la que se cachan excepciones usando bloques try-catch distintos.
 *
-* @author  Amparo López Gaona
-* @version Tercera edición
+* @author  Amparo LÃ³pez Gaona
+* @version Tercera ediciÃ³n
 */
 public class ExcepcionesCon2Try {
   static public void main(String pps[]) {
@@ -16,7 +16,7 @@ public class ExcepcionesCon2Try {
       // Algunas instrucciones
     try{
 
-      System.out.println("Proporciona el monto del déposito");
+      System.out.println("Proporciona el monto del dÃ©posito");
       monto = io.nextDouble();
       cuenta.depositar(monto);
     } catch(ExcepcionDepositoNegativo e) {

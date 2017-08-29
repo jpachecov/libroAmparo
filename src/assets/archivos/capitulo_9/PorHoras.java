@@ -1,8 +1,8 @@
 /**
  * Clase que implementa a la subclase de los empleados por horas.
  * Objetivo: ilustrar el uso de clases abstractas
- * @author  Amparo López Gaona
- * @version Tercera edición
+ * @author  Amparo LÃ³pez Gaona
+ * @version Tercera ediciÃ³n
  */
 public class PorHoras extends Permanente {
   private double horasTrabajadas;
@@ -10,7 +10,7 @@ public class PorHoras extends Permanente {
   private final double porcentaje = 0.02;
 
   /**
-   * Constructor de un empleado por horas. Éste llama a permanente.
+   * Constructor de un empleado por horas. Ã‰ste llama a permanente.
    * @param nombre - nombre del empleado
    * @param direccion - direccion del empleado
    * @param curp - curp del empleado

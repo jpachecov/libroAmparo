@@ -1,7 +1,7 @@
 /**
  *  Clase para trabajo con horas.
- * @author  Amparo López Gaona
- * @version Tercera edición
+ * @author  Amparo L&oacute;epez Gaona
+ * @version Tercera edici&oacute;n
  */
 
 public class Hora {
@@ -35,28 +35,28 @@ public class Hora {
   }
 
   /**
-   * Método para obtener el n&uacute;mero de hora
+   * M&eacute;todo para obtener el n&uacute;mero de hora
    * @return int - las horas del objeto Hora
    */
   public int obtenerHora() {
     return horas;
   }
   /**
-   * Metodo para obtener los minutos en una hora 
+   * M&eacute;todo para obtener los minutos en una hora 
    * @return int - los minutos del objeto Hora
    */
   public int obtenerMinutos() {
     return minutos;
   }
   /**
-   * Metodo para obtener los segundos en una hora 
+   * M&eacute;todo para obtener los segundos en una hora 
    * @return int - los segundos del objeto Hora
    */
   public int obtenerSegundos() {
     return segundos;
   }
   /**
-   * Metodo para asignar la hora
+   * M&eacute;todo para asignar la hora
    * @param h - las horas para el objeto Hora
    */
   public void asignarHora(int h){
@@ -67,7 +67,7 @@ public class Hora {
       }
   }
   /**
-   * Metodo para asignarColoca los minutos de una hora 
+   * M&eacute;todo para asignarColoca los minutos de una hora 
    * @param m - los minutos para el objeto Hora
    */
   public void asignarMinutos(int m) {
@@ -78,7 +78,7 @@ public class Hora {
       }
   }
   /**
-   * Metodo para asignar los segundos de una hora 
+   * M&eacute;todo para asignar los segundos de una hora 
    * @param s - los segundos para el objeto Hora
    */
   public void asignarSegundos(int s) {
@@ -88,14 +88,16 @@ public class Hora {
 	  segundos = s;
       }
   }
-  /* Convierte una hora(hr:min:seg) a un n&uacute;mero entero que representa
+  /** 
+   * Convierte una hora(hr:min:seg) a un n&uacute;mero entero que representa
    * los segundos transcurridos. Cada hora equivale a 3600 segs y cada
    * minuto a 60 segundos.
    */
   private int enSegundos() {
     return horas * 3600 + minutos * 60 + segundos;
   }
-  /* Convierte un n&uacute;mero entero, que representa los segundos transcurridos,
+  /** 
+   * Convierte un n&uacute;mero entero, que representa los segundos transcurridos,
    * en un objeto de la clase Hora.
    */
   private Hora enHoras(int n) {
@@ -108,7 +110,7 @@ public class Hora {
     return new Hora(hh, mm, ss);
   }
   /**
-   * Metodo para sumar los minutos especificados al objeto que env&iacute;a el mensaje. 
+   * M&eacute;todo para sumar los minutos especificados al objeto que env&iacute;a el mensaje. 
    * Si los minutos son negativos se toma su valor absoluto.
    * @param mins - minutos que se sumar&aacute;n a la Hora.
    */
@@ -134,7 +136,7 @@ public class Hora {
     this.segundos = resultado.segundos;
   }
   /**
-   * Metodo para restar al objeto que env&iacute;a el mensaje (this) la hora especificada en el par&aacute;metro.
+   * M&eacute;todo para restar al objeto que env&iacute;a el mensaje (this) la hora especificada en el par&aacute;metro.
    * @param h - Hora que se restar&aacute;.
    */
   public Hora restar(Hora h) {
@@ -147,9 +149,9 @@ public class Hora {
     return enHoras(restaSegs);
   }
   /**
-   * Metodo para comparar dos horas, devolviendo la relaci&oacute;n de orden entre ellas.
+   * M&eacute;todo para comparar dos horas, devolviendo la relaci&oacute;n de orden entre ellas.
    * @param h - Hora con la que se comparar&aacute; el objeto que env&iacute;a el mensaje.
-   * @return int - la relaci&oacute;n de orden entre dos horas. >0, <0, =0
+   * @return int - la relaci&oacute;n de orden entre dos horas. > 0, < 0, = 0
    */
   public int comparar(Hora h) {
     return enSegundos() - h.enSegundos();

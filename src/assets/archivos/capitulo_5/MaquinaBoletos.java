@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 /**
  *  Clase para simular el funcionamiento de un maquina expendedora de boletos
- *  @author  Amparo López Gaona
- *  @version Tercera edición
+ *  @author  Amparo L&oacute;pez Gaona
+ *  @version Tercera edici&oacute;n
  */ 
 class MaquinaBoletos {
     private int totalBoletos;
@@ -34,7 +34,7 @@ class MaquinaBoletos {
      * Constructor para la cantidad de boletos especificados en la crecion
      * de la maquina expendedora. El precio de cada uno es de $3.0 y
      * la caja abre con $100.00
-     * @param nBoletos -- cantidad de boletos que se podrá vender
+     * @param nBoletos -- cantidad de boletos que se podr&aacute; vender
      */
     public MaquinaBoletos(int nBoletos) {
 	this(nBoletos, 3.0, 100.0);
@@ -42,9 +42,9 @@ class MaquinaBoletos {
 
     /**
      * Constructor de una maquina expendedora de boletos la cantidad de 
-     * boletos especificada y al precio especificado. La caja iniciará con
+     * boletos especificada y al precio especificado. La caja iniciar&aacute; con
      * la cantidad de dinero especificada
-     * @param nBoletos -- cantidad de boletos que se podrá vender
+     * @param nBoletos -- cantidad de boletos que se podr&aacute; vender
      * @param precio -- precio de cada boleto
      * @param dinero -- cnatidad de dinero ara abrir la caja
      */
@@ -64,7 +64,7 @@ class MaquinaBoletos {
 	int nBoletos = 0;
 
 	do {
-	System.out.println("¿Cuántos boletos quieres?");
+	System.out.println("Â¿CuÃ¡ntos boletos quieres?");
 	nBoletos = in.nextInt();
 	} while (nBoletos <= 0) ;
 	if (totalBoletos < nBoletos) {

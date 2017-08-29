@@ -1,10 +1,10 @@
 /**
  * Programa para probar la clase Alumno e introducir la instruccion switch
- * @author  Amparo LÛpez Gaona
- * @version Tercera ediciÛn
+ * @author  Amparo L√≥pez Gaona
+ * @version Tercera edici√≥n
  */
 class PruebaAlumno {
-  static Alumno alumnoPrueba = null;   //Alumno del cual se pedir· informacion
+  static Alumno alumnoPrueba = null;   //Alumno del cual se pedir√° informacion
   static java.util.Scanner in;
   
   //Metodo que muestra todas las opciones del menu

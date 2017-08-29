@@ -1,5 +1,24 @@
 @media (max-width: 700px) {
 	.menu-capitulos{
-		display: none;
+		width: 300px;
+	}
+
+	.cont-caps h3 {
+		font-family: 'Playfair Display', serif; 
+		color: #822727;
+		font-size: 20px;
+	}
+	#lista-capitulos li span{
+	    font-weight: 400;
+	    font-size: 12px;
+	    font-family: 'Quicksand', sans-serif;
+	}
+	.menu-capitulos ul li {
+		padding: 8px 0px;
+	}
+	.showed-menu {
+		-webkit-box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
+		-moz-box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
+		box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
 	}
 }

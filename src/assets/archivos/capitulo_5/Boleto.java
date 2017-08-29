@@ -1,13 +1,13 @@
 /**
  *  Clase para generar boletos para acceso al Metro.
- *  @author  Amparo López Gaona
- *  @version Tercera edición
+ *  @author  Amparo L&oacute;pez Gaona
+ *  @version Tercera edici&oacute;n
  */ 
 class Boleto {
   private final double precio;    // Precio del boleto
 
 /**
- * Constructor por omision. Inicializa el precio del boleto en $3.00
+ * Constructor por omisi&oacute;n. Inicializa el precio del boleto en $3.00
  */
   public Boleto() {
       this(3.0);
@@ -22,7 +22,7 @@ class Boleto {
   }
 
 /**
- * Método de acceso que devuelv el precio del boleto
+ * M&eacute;todo de acceso que devuelve el precio del boleto
  * @return double - precio del boleto.
  */
   public double obtenerPrecio() {
@@ -30,14 +30,14 @@ class Boleto {
   }
 
 /**
- * Método para imprimir un boleto.
+ * M&eacute;todo para imprimir un boleto.
  */
   public void imprimir(){
       System.out.println(this);
   }
 
 /**
- * Método para obtener el boleto como una cadena de caracteres.
+ * M&eacute;todo para obtener el boleto como una cadena de caracteres.
  */
   public String toString(){
     return "+-----------------------+\n" +

@@ -1,7 +1,7 @@
 /**
  *  Clase para probar la clase Punto
- * @author  Amparo López Gaona
- * @version Tercera edición
+ * @author  Amparo L&oacute;pez Gaona
+ * @version Tercera edici&oacute;n
  */
 
 public class PruebaPunto {

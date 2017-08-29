@@ -1,15 +1,15 @@
 /**
  * Clase que implementa a la subclase de los empleados permanentes
  * Objetivo: ilustrar el uso de clases abstractas
- * @author  Amparo López Gaona
- * @version Tercera edición
+ * @author  Amparo LÃ³pez Gaona
+ * @version Tercera ediciÃ³n
  */
 abstract public class Permanente extends Empleado {
   private Contrato contrato;
   protected double deducciones;
 
   /**
-   * Constructor de un empleado permanente. Éste llama al constructor
+   * Constructor de un empleado permanente. Ã‰ste llama al constructor
    * de la clase Empleado
    * @param nombre - nombre del empleado
    * @param direccion - direccion del empleado

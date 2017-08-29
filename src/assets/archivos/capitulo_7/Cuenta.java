@@ -21,7 +21,7 @@ public Cuenta(){
    */
   public Cuenta(double disponibleInicial) {
       disponible = (disponibleInicial < 2500) ? 2500 : disponibleInicial;
-      numCuenta = num++;
+      numCta = num++;
   }
 
   /** 

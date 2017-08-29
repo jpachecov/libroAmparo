@@ -1,7 +1,7 @@
 /**
  * Clase para vender boletos
- * @author  Amparo López Gaona
- * @version Tercera edición
+ * @author  Amparo L&oacute;pez Gaona
+ * @version Tercera edici&oacute;n
  */
 public class Expendedora {
     public static void main(String[] pps) {

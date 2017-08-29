@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 /**
- * Clase de Alumnos para almacenar con información de alumnos 
+ * Clase de Alumnos para almacenar con informaciÃ³n de alumnos 
  *
- * @author  Amparo López Gaona
- * @version Tercera edición
+ * @author  Amparo LÃ³pez Gaona
+ * @version Tercera ediciÃ³n
  */
 
 class Alumno {
@@ -19,8 +19,8 @@ class Alumno {
   /**
    * Constructor que recibe los datos personales del alumno.
    * @param n - Cadena que representa el nombre del alumno
-   * @param d - Cadena que representa el número de registro del alumno
-   * @param t - Caracter que representa el teléfono del alumno
+   * @param d - Cadena que representa el nÃºmero de registro del alumno
+   * @param t - Caracter que representa el telÃ©fono del alumno
    * @param nCalif - entero que especifica la cantidad de calificaciones
    */
   public Alumno (String n, String d, String t, int nCalif) {
@@ -32,7 +32,7 @@ class Alumno {
   }    
 
   /** 
-   * Método para obtener el nombre del alumno.
+   * MÃ©todo para obtener el nombre del alumno.
    * @return String - nombre del alumno.
    */
   public String obtenerNombre() {
@@ -40,15 +40,15 @@ class Alumno {
   }
 
   /**
-   * Método para obtener el número de cuenta del alumno.
-   * @return String - número de cuenta del alumno.
+   * MÃ©todo para obtener el nÃºmero de cuenta del alumno.
+   * @return String - nÃºmero de cuenta del alumno.
    */
   public String obtenerNumeroDeCuenta() {
     return numRegistro;
   }
 
   /**
-   * Método para obtener la cantidad de calificaciones del alumno.
+   * MÃ©todo para obtener la cantidad de calificaciones del alumno.
    * @return int -- cantidad de calificaciones del alumno.
    */
   public int obtenrNumCalificaciones() {
@@ -59,8 +59,8 @@ class Alumno {
    * Compara las calificaciones del alumno con las calificaciones
    * promedio
    * @param int[] -- arreglo con los promedios que se compara al alumno.
-   * @return int -- 1 si el alumno está por arriba del promedio del grupo,
-   * -1 si está por debajo y 0 si está en el promedio del grupo.
+   * @return int -- 1 si el alumno estÃ¡ por arriba del promedio del grupo,
+   * -1 si estÃ¡ por debajo y 0 si estÃ¡ en el promedio del grupo.
    */
   public int compararPromedio(int [] promedio) {
     int menor = 0, mayor = 0, igual = 0;
@@ -82,9 +82,9 @@ class Alumno {
   }
   
 /**
-  * Asigna calificación siempre y cuando sea mayor que cero
-  * @param curso -- curso al que se asigna una calificación
-  * @param cal -- calificación que se asigna
+  * Asigna calificaciÃ³n siempre y cuando sea mayor que cero
+  * @param curso -- curso al que se asigna una calificaciÃ³n
+  * @param cal -- calificaciÃ³n que se asigna
   *
   */
   public void asignarCalificacion(int curso, int cal) {
@@ -92,10 +92,10 @@ class Alumno {
       if(cal >= 0 && cal <= 10){
         calificaciones[curso] = cal;
       } else {
-        new Error("Calificación incorrecta");
+        new Error("CalificaciÃ³n incorrecta");
       }
     }else{
-      new Error("Número de Curso incorrecto");
+      new Error("NÃºmero de Curso incorrecto");
     }  
   }
 
@@ -108,8 +108,8 @@ class Alumno {
     
     for(int i = 0; i<calificaciones.length; i++){
       
-      do{ //valida la calificación
-        System.out.println("Dar la calificación para el curso " + (i+1) + " ");
+      do{ //valida la calificaciÃ³n
+        System.out.println("Dar la calificaciÃ³n para el curso " + (i+1) + " ");
         cal = in.nextInt();
       }while (cal < 0 || cal > 10);
       asignarCalificacion(i, cal);
@@ -130,8 +130,8 @@ class Alumno {
   }
 
   /**
-   * Calcula la calificación más alta del alumno.
-   * @return int - la calificación mayor
+   * Calcula la calificaciÃ³n mÃ¡s alta del alumno.
+   * @return int - la calificaciÃ³n mayor
    */
   public int mayorCalificacion () {
     int mayor = calificaciones[0];
@@ -145,10 +145,10 @@ class Alumno {
   }
 
   /**
-   * Busca el curso con calificación dada.
-   * @param cal  - calificación buscada
-   * @return int - curso con calificación igual a la solicitada y -1 en
-   *               caso que no haya curso con la calificación dada.
+   * Busca el curso con calificaciÃ³n dada.
+   * @param cal  - calificaciÃ³n buscada
+   * @return int - curso con calificaciÃ³n igual a la solicitada y -1 en
+   *               caso que no haya curso con la calificaciÃ³n dada.
    */
   public int buscarCurso (int cal) {
     int i = 0;
@@ -159,8 +159,8 @@ class Alumno {
   }
 
   /**
-   * Obtiene todos los cursos en los cuales la calificación es de diez.
-   * @return int[] - arreglo con los cursos con calificación igual a diez.
+   * Obtiene todos los cursos en los cuales la calificaciÃ³n es de diez.
+   * @return int[] - arreglo con los cursos con calificaciÃ³n igual a diez.
    */
   public int[] todosLosDieces () {
     int j = 0;
@@ -171,7 +171,7 @@ class Alumno {
         dieces[++j] = i;
       }
     }
-    dieces[0] = j ;    //Para indicar el número de elementos ocupados
+    dieces[0] = j ;    //Para indicar el nÃºmero de elementos ocupados
                      //Notar que si no hay cursos con 10, se almacena un 0.
     return dieces;
   }

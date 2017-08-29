@@ -1,0 +1,1 @@
+Abre con cualquier navegador el archivo index.html

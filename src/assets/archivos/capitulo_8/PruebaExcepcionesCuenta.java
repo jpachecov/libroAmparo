@@ -3,8 +3,8 @@ import java.util.Scanner;
 /**
 *
 * Clase para probar las excepciones creadas.
-* @author  Amparo López Gaona
-* @version Tercera edición
+* @author  Amparo LÃ³pez Gaona
+* @version Tercera ediciÃ³n
 */
 public class PruebaExcepcionesCuenta {
   static public void main(String pps[]) {
@@ -17,18 +17,11 @@ public class PruebaExcepcionesCuenta {
       monto = io.nextDouble();
       cuenta =  new Cuenta(monto);
 
-      System.out.println("Proporciona el monto del déposito");
+      System.out.println("Proporciona el monto del dÃ©posito");
       monto = io.nextDouble();
       cuenta.depositar(monto);
 
       System.out.println("El saldo actual es"+cuenta.obtenerDisponible());
-    } catch (ExcepcionDepositoNegativo e) {
-       System.out.println(e);
-       //    } catch (ExcepcionRetiroNegativo e) {
-       //       System.out.println(e);
-    } catch (ExcepcionBancaria e) {
-       System.out.println(e);
-    }
 
       System.out.println("Proporciona el monto del retiro");
       monto =io.nextDouble(); 
@@ -36,6 +29,13 @@ public class PruebaExcepcionesCuenta {
 
       System.out.println("El saldo actual es"+cuenta.obtenerDisponible());
 
+    } catch (ExcepcionDepositoNegativo e) {
+       System.out.println(e);
+       //    } catch (ExcepcionRetiroNegativo e) {
+       //       System.out.println(e);
+    } catch (ExcepcionBancaria e) {
+       System.out.println(e);
+    }
 
     System.out.println("Fin del programa");
   }

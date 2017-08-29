@@ -11,8 +11,6 @@ export const CAPITULOS: Capitulo[] = [
 		resumen: 'En este capítulo se describe la forma de crear y utilizar datos de los tipos predefinidos por Java, primitivos, en expresiones que devuelven un valor. Se describe la forma en que Java evalúa las expresiones de acuerdo con la prioridad y reglas de asociación de los operadores involucrados, así como la forma de trabajar con expresiones que contengan elementos de diferente tipo.', 
 		listaArchivos: null
 	},
-
-	// Falta clase Moneda y Dado
 	{	id: 3, nombre: 'Creación  y uso de objetos',
 		resumen: 'En este capítulo se muestra cómo trabajar con objetos, ya sea de clases definidas en los paquetes Java o bien de clases definidas por el programador. El trabajo con objetos incluye crearlos, interactuar con ellos a través del envío y recepción de mensajes, compararlos, eliminarlos e imprimirlos, entre otras operaciones.', 
 		listaArchivos: [
@@ -51,10 +49,21 @@ export const CAPITULOS: Capitulo[] = [
 				descripcion:'',
 				ruta:'MayorValor.java',
 				tipo:'java'
+			},
+			{
+				nombre:'Moneda',
+				descripcion:'',
+				ruta:'Moneda.class',
+				tipo:'class'
+			},
+			{
+				nombre:'Dado',
+				descripcion:'',
+				ruta:'Dado.class',
+				tipo:'class'
 			}
 		]
 	},
-	// Falta documentación de la clase Hora
 	{	id: 4, nombre: 'Creación  y uso de clases',
 		resumen: 'En este capítulo se muestra la forma en que el programador puede crear sus propias clases. En toda clase se define tanto la estructura como el comportamiento que tendrán sus objetos. La parte estructural de los objetos se define mediante la declaración de datos, éstos pueden ser de cualquier tipo definido por el lenguaje. El comportamiento de los objetos se modela mediante métodos, y es sólo mediante éstos que se puede asignar, alterar y conocer el estado de un objeto.', 
 		listaArchivos: [
@@ -67,7 +76,7 @@ export const CAPITULOS: Capitulo[] = [
 			{
 				nombre:'Documentación de la clase Punto',
 				descripcion:'',
-				ruta:'Punto.html',
+				ruta:'javadoc.zip',
 				tipo:'html'
 			},
 			{
@@ -103,8 +112,8 @@ export const CAPITULOS: Capitulo[] = [
 			{
 				nombre:'Documentación de la clase Hora',
 				descripcion:'',
-				ruta:'Hora.java',
-				tipo:'java'
+				ruta:'javadoc.zip',
+				tipo:'html'
 			}	
 		]
 	},
@@ -326,6 +335,7 @@ export const CAPITULOS: Capitulo[] = [
 			},	
 		]
 	},
+	// Falta clase Contrato.java para compilar clase Nomina.java, Permanente.java, Horas.java, TiempoCompleto.java
 	{	id: 9, nombre: 'Clases abstractas e interfaces',
 		resumen: 'En este capítulo se describe la forma de crear programas tan generales que representan un concepto abstracto, por lo que no es posible definir la implementación de todos sus métodos y por lo tanto son clases de las que no es posible generar objetos, pero sirven para especificar el comportamiento de sus descendientes. También se describe la forma de definir interfaces que son especificaciones del comportamiento deseado para las clases que las implementan.', 
 		listaArchivos: [

@@ -1,12 +1,13 @@
 @media (max-width: 700px) {
 	.contenido-capitulo {
 	    padding: 0 30px !important;
+	    padding-left: 80px !important;
 	}
 	.shadow {
 		padding-top: 85px;
 	}
 	#titulo-libro{
-		border-bottom: 1px solid #822727;
+		border-bottom: 2px solid #822727;
 	    font-size: 17px;
 
 	}

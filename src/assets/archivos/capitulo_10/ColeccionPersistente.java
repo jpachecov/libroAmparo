@@ -34,15 +34,15 @@ public class ColeccionPersistente {
   }
 
   /**
-   * MÈtodo para agregar una nueva obra al arreglo
-   * @param Obra -- obra que ser· agregada
+   * M√©todo para agregar una nueva obra al arreglo
+   * @param Obra -- obra que ser√° agregada
    */
   public void agregarObra(Obra o) {
     coleccion[nObras++] = o;
   }
 
   /**
-   * MÈtodo para serializar los objetos almacenados en un arreglo de obras 
+   * M√©todo para serializar los objetos almacenados en un arreglo de obras 
    */
   public void guardarColeccion(){
     ObjectOutputStream escritor = null;
@@ -52,15 +52,15 @@ public class ColeccionPersistente {
       for (int i=0; i < nObras; i++)
 	escritor.writeObject(coleccion[i]);
     } catch(NotSerializableException e){
-      System.out.println("Error en la grabaciÛn: "+e+". Objeto no serializable.");
+      System.out.println("Error en la grabaci√≥n: "+e+". Objeto no serializable.");
     } catch(IOException e){
-      System.out.println("Error en la grabaciÛn: "+e);
+      System.out.println("Error en la grabaci√≥n: "+e);
     } finally {
       if (escritor != null) {
         System.out.println("Cerrando el archivo "+nombreArch);
         try { escritor.close(); } catch (IOException e) {}
       } else {
-        System.out.println("No se abriÛ ning˙n archivo.");
+        System.out.println("No se abri√≥ ning√∫n archivo.");
       }
     }
   }
@@ -89,13 +89,13 @@ public class ColeccionPersistente {
         System.out.println("Cerrando el archivo "+nombreArch);
         try { lector.close(); } catch (IOException e) {}
       } else {
-        System.out.println("No se abriÛ ning˙n archivo.");
+        System.out.println("No se abri√≥ ning√∫n archivo.");
       }
     }
   }
 
   /**
-   * MÈtodo que devuelve el arreglo de obras.
+   * M√©todo que devuelve el arreglo de obras.
    * @return Obras[] - arreglo que contiene las obras de una coleccion.
    */
   public Obra[] obtenerColeccion(){
@@ -103,7 +103,7 @@ public class ColeccionPersistente {
   }
 
   /**
-   * MÈtodo que devuelve el nombre del archivo donde est·n las obras.
+   * M√©todo que devuelve el nombre del archivo donde est√°n las obras.
    * @return String - nombre del archivo que contiene una coleccion de obras.
    */
   public String obtenerNombreArch(){
@@ -111,7 +111,7 @@ public class ColeccionPersistente {
   }
 
   /**
-   * MÈtodo para listar todas las obras de la coleccion
+   * M√©todo para listar todas las obras de la coleccion
    */
   public void imprimirColeccion(){
     for(int i = 0; i < nObras; i++){

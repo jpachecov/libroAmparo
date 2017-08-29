@@ -1,13 +1,13 @@
 /**
- * Programa para probar la clase Alumno con arreglos como parámetro y como valor
+ * Programa para probar la clase Alumno con arreglos como parÃ¡metro y como valor
  * de retorno
- * @author  Amparo López Gaona
- * @version Tercera edición
+ * @author  Amparo LÃ³pez Gaona
+ * @version Tercera ediciÃ³n
  */
 class PruebaAlumno {
 
   public static void main(String [] pps) {
-    String [] materia = {"Algebra", "Calculo","Programación", "Estructuras de Datos", "Bases de Datos"};
+    String [] materia = {"Algebra", "Calculo","ProgramaciÃ³n", "Estructuras de Datos", "Bases de Datos"};
     int[] excelentes; 
     
     Alumno alumn= new Alumno("Andrea","Calle Chica 56","921404",5);

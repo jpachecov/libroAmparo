@@ -1,20 +1,20 @@
 /** 
  * Programa que prueba el funcionamiento de la
- * jerarqu韆 de herencia. En 閘 se crea un arreglo de empleados y se llena
+ * jerarqu铆a de herencia. En 茅l se crea un arreglo de empleados y se llena
  * con empleados de diferente clase.
- * @author  Amparo L髉ez Gaona
- * @version Tercera edici髇
+ * @author  Amparo L贸pez Gaona
+ * @version Tercera edici贸n
  */
 public class Nomina {
 
   public static void main(String [] pps) {
     Empleado p[] = new Empleado[3];
 
-    p[0] = new Temporal("Juan P閞ez","calle 1-1", "pejua345622",40);
-    p[1] = new PorHoras("Carmelo G髆ez","calle 2-2", "carmelo345622",30,85);
-    p[2] = new TiempoCompleto("Andrea L髉ez","calle 444", "andi345622",500);
+    p[0] = new Temporal("Juan P茅rez","calle 1-1", "pejua345622",40);
+    p[1] = new PorHoras("Carmelo G贸mez","calle 2-2", "carmelo345622",30,85);
+    p[2] = new TiempoCompleto("Andrea L贸pez","calle 444", "andi345622",500);
  
-    System.out.println("N髆ina para la empresa ABSTRACTA S.A.");
+    System.out.println("N贸mina para la empresa ABSTRACTA S.A.");
 
     for (int i = 0; i <3; i++) {
       System.out.println(p[i].obtenerNombre()+"\t\t"+p[i].calcularSueldo());

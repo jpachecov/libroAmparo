@@ -1,8 +1,8 @@
 import java.util.Comparator;
 /**
  * Clase para determinar el mayor de un arreglo de objetos.
- * @author  Amparo LÛpez Gaona
- * @version Tercera ediciÛn
+ * @author  Amparo L√≥pez Gaona
+ * @version Tercera edici√≥n
  */
 class ObjetoMayor {
   private Object [] arreglo;
@@ -11,14 +11,14 @@ class ObjetoMayor {
   /**
    * Constructor para la clase Objeto Mayor
    * @param c - un comparador
-   * @param o - arreglo de objetos donde se buscar·
+   * @param o - arreglo de objetos donde se buscar√°
    */
   ObjetoMayor(Comparator c, Object [] o) {
     arreglo = o;
     prueba = c;
   }
 /**
- * MÈtodo para comparar objetos de un arreglo, utilizando un comparador
+ * M√©todo para comparar objetos de un arreglo, utilizando un comparador
  * @return int. posicion del objeto mayor.
  */
  public Object mayor() {

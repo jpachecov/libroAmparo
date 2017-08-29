@@ -66,6 +66,7 @@ export class AppComponent {
   }
 
   showMenu():void {
+    $(".menu-capitulos").addClass("showed-menu");
     $(".menu-capitulos").velocity({
        translateX: "0px",
     }, {
@@ -94,6 +95,7 @@ export class AppComponent {
       complete: function(){
         //$(this).css("display", "none");
         $(this).addClass("menu-hide");
+        $(".menu-capitulos").removeClass("showed-menu");
       }
     });
     // Padding del contenido del captitulo
