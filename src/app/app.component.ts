@@ -65,6 +65,9 @@ export class AppComponent {
       this.router.navigate(['/capitulo', this.capituloSel.id]);
   }
 
+
+  enTope : boolean = false;
+
   showMenu():void {
     $(".menu-capitulos").addClass("showed-menu");
     $(".menu-capitulos").velocity({
@@ -72,6 +75,7 @@ export class AppComponent {
     }, {
       enqueue : false,
       duration: 250,
+      easing: [.07,.83,.89,.94],
       complete: function(){
         //$(this).css("display", "none");
         $(this).removeClass("menu-hide");
@@ -86,18 +90,42 @@ export class AppComponent {
 
   }
 
-  hideMenu():void {
-    $(".menu-capitulos").velocity({
-       translateX: "-250px",
+  subeIcono():void {
+    $(".cont-pic > a").velocity({
+       height: "25px",
     }, {
-      enqueue : false,
+      enqueue : true,
       duration: 200,
+      easing : [.07,.83,.89,.94],
       complete: function(){
         //$(this).css("display", "none");
         $(this).addClass("menu-hide");
         $(".menu-capitulos").removeClass("showed-menu");
       }
     });
+
+  }
+
+  hideMenu():void {
+
+    $(".menu-capitulos").velocity({
+       translateX: "-250px",
+    }, {
+      enqueue : true,
+      duration: 200,
+      easing : [.07,.83,.89,.94],
+      complete: function(){
+        //$(this).css("display", "none");
+        $(this).addClass("menu-hide");
+        $(".menu-capitulos").removeClass("showed-menu");
+      }
+    });
+
+    if($(window).width() <= 500){
+      this.subeIcono();
+
+    }
+
     // Padding del contenido del captitulo
     $(".contenido-capitulo").velocity({
       paddingLeft: "100px",
