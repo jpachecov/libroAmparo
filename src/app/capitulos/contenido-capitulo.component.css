@@ -51,10 +51,17 @@ Avenir,Tahoma,sans-serif
 
 */
 
-#resumen {
+.contenido-capitulo p {
     font-weight: 400;
     font-size: 13px;
-    font-family: 'Droid Serif', serif;/*'Zilla Slab', serif*/;/*'Quicksand', sans-serif;*/
+    font-family: 'Quicksand', sans-serif;/*'Droid Serif', serif;*//*'Zilla Slab', serif*/;    
+}
+
+.resumen {
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;/*'Droid Serif', serif;*//*'Zilla Slab', serif*/;
+    text-align: justify;
 }
 #lista-archivos{
     list-style: none;

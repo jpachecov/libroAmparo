@@ -81,6 +81,14 @@ export class AppComponent {
         $(this).removeClass("menu-hide");
       }
     });
+
+    if($(window).width() >= 500){
+      console.log("baja icono")
+      this.bajaIcono();
+
+    }
+
+
     // Padding del contenido del captitulo
     $(".contenido-capitulo").velocity({
       paddingLeft: "350px",
@@ -105,9 +113,25 @@ export class AppComponent {
     });
 
   }
+  bajaIcono():void {
+    $(".cont-pic > a").velocity({
+       height: "100px",
+    }, {
+      enqueue : true,
+      duration: 200,
+      easing : [.07,.83,.89,.94],
+      complete: function(){
+        //$(this).css("display", "none");
+        $(this).removeClass("menu-hide");
+        $(".menu-capitulos").addClass("showed-menu");
+      }
+    });
+
+  }
+
 
   hideMenu():void {
-
+    console.log("hideMenu");
     $(".menu-capitulos").velocity({
        translateX: "-250px",
     }, {

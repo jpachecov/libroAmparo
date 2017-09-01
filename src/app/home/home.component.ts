@@ -7,6 +7,7 @@ import { Libro } from '../libro/libro';
   templateUrl: './home.component.html',
   styleUrls: [
     './home.component.css',
+    '../responsive/home.responsive.css',
     '../capitulos/contenido-capitulo.component.css',
     '../../font-awesome-4.7.0/css/font-awesome.min.css'
   ],
