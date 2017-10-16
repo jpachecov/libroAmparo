@@ -2,8 +2,9 @@
 	<!--<app-header></app-header>-->
 	<header class="menu-capitulos" >
 		<div class="cont-pic">
-			<a href="/" class="picasso" [ngStyle]="{'background-image': 'url(assets/la_cocina.JPG)'}">
-			</a>			
+			<!-- <a href="/" class="picasso" [ngStyle]="{'background-image': 'url(assets/la_cocina.JPG)'}">
+			</a> -->			
+			<a href="/" class="picasso"></a>			
 		</div>
 		<i
 			class="fa fa-times close-menu" 
@@ -15,17 +16,23 @@
 			<h3>Capítulos</h3>
 			<ul id="lista-capitulos">
 				<li *ngFor="let capitulo of libro.capitulos" (click)="onSelect(capitulo)">
-					<span [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}. {{capitulo.nombre}}</span>
+					<span>
+						<label [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}</label>
+						<a>{{capitulo.nombre}}</a>
+					</span>
 				</li>
 			</ul>
 		</div>
 	</header><!--
-	--><router-outlet></router-outlet>
+	-->
+	<div id="top-picasso">
+		<a href="/" id="picasso" [ngStyle]="{'background-image': 'url(assets/la_cocina.JPG)'}">
+		</a>		
+	</div>
+	<router-outlet></router-outlet>
 	<!--<contenido-capitulo [capituloSel]="capituloSel"></contenido-capitulo>--><!--
-	--><detalle-profesora></detalle-profesora>
+	--><!--<detalle-profesora></detalle-profesora>-->
 </div>
 <footer>
-	<div>
-		<h4>Desarrollado por Jean Pierre Pacheco Avila. 2017.</h4>
-	</div>
+	<footer-profa></footer-profa>
 </footer>

@@ -6,6 +6,7 @@ import { RouterModule }   from '@angular/router';
 import { PageNotFound } from './404/404.component';
 import { DetalleProfesor } from './profesora/detalle-profesora.component';
 import { ContenidoCapitulo } from './capitulos/contenido-capitulo.component';
+import { Footer } from './footer/footer.component';
 /*
 import { MenuCapitulosComponent } from './capitulos/menu.component'; 
 */
@@ -23,7 +24,8 @@ import { LibroService } from './servicios/libros-service';
     ContenidoCapitulo,
     DetalleProfesor,
     HomeComponent,
-    PageNotFound
+    PageNotFound,
+    Footer
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,62 @@
+.footer {
+	padding-left: 330px;
+	padding-top: 10px;
+}
+.footer .imagenes-escudos {
+	width: 120px;
+	display: inline-block;
+	vertical-align: middle;
+
+	padding-right: 20px;
+	border-right: solid 1px white;
+}
+
+.footer .imagenes-escudos > div {
+	display: inline-block;
+	width: 50%;
+
+}
+
+.footer .imagenes-escudos > div > a > img {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#datos-profa {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	padding-left: 20px;
+}
+#datos-profa h3 {
+	width: 45%;
+	display: inline-block;
+	color:white;
+	margin: 0px;
+	font-family: 'Playfair Display', serif;
+	font-size: 17px;
+
+}
+#datos-profa span {
+	display: inline-block;
+	width: 45%;
+	color:white;
+	font-size: 14px;
+}
+/* font awesome */
+#datos-profa span i {
+	margin-right: 3px;
+}
+
+#desa {
+	width: 25%;
+	display: inline-block;
+}
+
+#desa h4 {
+	text-align: right;
+	color: white;
+	font-size: 9px;
+	font-family: 'Quicksand', sans-serif;
+}

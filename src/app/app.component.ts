@@ -74,7 +74,7 @@ export class AppComponent {
        translateX: "0px",
     }, {
       enqueue : false,
-      duration: 250,
+      duration: 200,
       easing: [.07,.83,.89,.94],
       complete: function(){
         //$(this).css("display", "none");
@@ -93,7 +93,14 @@ export class AppComponent {
     $(".contenido-capitulo").velocity({
       paddingLeft: "350px",
     }, {
-      duration: 200
+      duration: 180
+    });
+
+    // Padding del footer
+    $(".footer").velocity({
+      paddingLeft: "330px",
+    }, {
+      duration: 180
     });
 
   }
@@ -156,6 +163,14 @@ export class AppComponent {
     }, {
       duration: 250
     });
+
+    // Padding del footer
+    $(".footer").velocity({
+      paddingLeft: "100px",
+    }, {
+      duration: 250
+    });
+
   }
   constructor(private libroService:LibroService, private router: Router){
     this.libro = this.libroService.getLibroAmparo();

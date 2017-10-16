@@ -4,6 +4,14 @@
 	--ancho-menu: 300px;
 }
 
+#top-picasso #picasso {
+    display: block;
+    width: 100%;
+    height: 125px;
+    background-position: 50% 40%;
+    background-size: cover;
+}
+
 .menu-capitulos {
 	position: fixed;
 	top:0px;
@@ -34,18 +42,25 @@ box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
 	cursor: pointer;
 	display: block;
 	font-family: sans-serif;
-	padding: 10px 0px;
+	padding: 5px 0px;
 }
 
 .menu-capitulos ul li:hover span {
 	color: #822727;
 
 }
-
+/*
 .cap-seleccion {
 	border-bottom: solid 2px #822727;
 	color: #822727;
 	font-weight: 800 !important;
+}
+*/
+.cap-seleccion  {
+	background-color: #b55959 !important;
+	color: white;
+	border: none !important;
+	font-weight: 800;
 }
 
 
@@ -55,13 +70,14 @@ Imagen de menu picasso
 */
 
 .cont-pic{
+	background: #822727;
 	border-bottom: solid 2px #822727;
 }
 
 .picasso{
 	display: inline-block;
 	width:100%;
-	height: 100px;
+	height: 125px;
 	background-position: 50% 50%;
 	background-size: cover;
 	vertical-align: middle;
@@ -99,11 +115,29 @@ Contenedor capitulos
     font-family: 'Quicksand', sans-serif;
 }
 
+#lista-capitulos li span > label{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: solid 1px #828787;
+	border-radius: 100%;
+	font-size: 12px;
+	text-align: center;
+	padding: 1px;
+	vertical-align: middle;
+	line-height: 18px;
+
+}
+#lista-capitulos li span > label a {
+	display: inline-block;
+	width: calc(100% - 22px);
+}
+
 footer{
 	position: fixed;
 	width: 100%;
 	height: 70px;
-	background: white;
+	background: #822727;
 	bottom: 0px;
 	z-index: 50;
 	border-top: solid 1px #cacaca;
