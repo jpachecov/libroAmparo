@@ -1,9 +1,103 @@
 @media (max-width: 700px) {
 	footer{
-		height: 50px;
+		/* HAcer animacion hasta 200px cuando se llegue al final scroll */
+		height: 90px;
 	}
 	footer h4 {
 		font-size: 10px;
 		padding-top: 10px;
 	}
+
+	.footer {
+		padding-left: 50px !important;
+	}
+	.footer .imagenes-escudos {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.footer .imagenes-escudos > div {
+		display: inline-block;
+		width: 50%;
+
+	}
+
+	.footer .imagenes-escudos > div > a > img {
+		display: block;
+		width: 60px;
+		margin: 0 auto;
+	}
+
+	#datos-profa {
+		width: 100%;
+		padding-left: 40px;
+	}
+	#datos-profa h3 {
+		width: 100%;
+		font-size: 12px;
+
+	}
+	#datos-profa span {
+		display: inline-block;
+		width: 100%;
+		color:white;
+		font-size: 10px;
+	}
+	/* font awesome */
+	#datos-profa span i {
+		margin-right: 3px;
+	}
+
+	#desa {
+		width: 100%;
+		display: inline-block;
+	}
+
+	#desa h4 {
+		text-align: right;
+		color: white;
+		font-size: 9px;
+		font-family: 'Quicksand', sans-serif;
+	}
+
+}
+
+@media (min-width: 700px) and (max-width: 1170px) {
+	.footer {
+
+	}
+	.footer .imagenes-escudos {
+		width: 140px;
+	}
+
+	.footer .imagenes-escudos > div {
+	}
+
+	.footer .imagenes-escudos > div > a > img {
+	}
+
+	#datos-profa {
+		width: 350PX;
+	}
+	#datos-profa h3 {
+		width: 45%;
+		font-size: 12px;
+	}
+	#datos-profa span {
+		width: 49%;		
+		font-size: 12px;
+			
+			
+	}
+
+	#datos-profa span i {
+	}
+
+	#desa {
+		display: none;
+	}
+
+	#desa h4 {
+	}	
 }

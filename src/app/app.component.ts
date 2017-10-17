@@ -91,7 +91,7 @@ export class AppComponent {
 
     // Padding del contenido del captitulo
     $(".contenido-capitulo").velocity({
-      paddingLeft: "350px",
+      paddingLeft: "470px",
     }, {
       duration: 180
     });
@@ -159,7 +159,7 @@ export class AppComponent {
 
     // Padding del contenido del captitulo
     $(".contenido-capitulo").velocity({
-      paddingLeft: "100px",
+      paddingLeft: "280px",
     }, {
       duration: 250
     });

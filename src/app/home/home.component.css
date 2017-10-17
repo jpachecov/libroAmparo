@@ -1,7 +1,60 @@
 #lista-capitulos {
 	list-style: none;
 	padding-left: 10px;
+	width: 90%;
+	float: none;
+	margin: 0 auto;
 }
+
+#lista-capitulos li {
+	display: inline-block;
+	width: calc(20% - 1px);
+	padding: 30px 0px;
+}
+
+#lista-capitulos li a {
+	color: black;
+}
+
+#lista-capitulos li #ico {
+	display: block;
+	width: 100%;
+}
+
+#lista-capitulos li #ico img {
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+	border: solid 3px #a19e9e;
+	border-radius: 100%;
+}
+
+#lista-capitulos li #id {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 4px 0;
+	font-weight: 800;
+
+}
+
+#lista-capitulos li #nom {
+	float: none;
+	margin:  0 auto;
+	display: block;
+	width: 60%;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 4px 0;
+
+}
+
+
 .home-page p{
 	font-family: 'Quicksand', sans-serif;
 	text-align: justify;
