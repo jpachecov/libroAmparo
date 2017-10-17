@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import {
   trigger,
@@ -55,10 +55,24 @@ declare var $ :any;
     */
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
   libro: Libro;
   capituloSel : Capitulo;
+
+  ngOnInit() : void {
+
+    var color_principal = "#822727";
+
+    $(".cont-pic").css("background", color_principal);
+    $("footer").css("background", color_principal);
+
+    
+  }
+  
+  constructor(private libroService:LibroService, private router: Router){
+    this.libro = this.libroService.getLibroAmparo("practicas");
+  }
 
   onSelect(capitulo : Capitulo) : void {
       this.capituloSel = capitulo;
@@ -172,7 +186,5 @@ export class AppComponent {
     });
 
   }
-  constructor(private libroService:LibroService, private router: Router){
-    this.libro = this.libroService.getLibroAmparo();
-  }
+
 }

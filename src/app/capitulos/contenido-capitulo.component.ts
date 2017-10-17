@@ -43,7 +43,7 @@ export class ContenidoCapitulo implements OnInit{
 	libro:Libro;
 	@Input() capituloSel:Capitulo;
 	constructor(private libroService:LibroService, private route: ActivatedRoute, private location: Location){
-		this.libro = this.libroService.getLibroAmparo();
+		this.libro = this.libroService.getLibroAmparo("");
 	}
 	ngOnInit(): void {
 		  this.route.paramMap
