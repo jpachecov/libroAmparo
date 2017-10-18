@@ -23,7 +23,7 @@ declare var $ :any;
   templateUrl: './app.component.html',
   styleUrls: [
     './app.component.css',
-    '/responsive/app.component.responsive.css',
+    'responsive/app.component.responsive.css',
     'responsive/menu.responsive.css',
     'responsive/footer.responsive.css',
     '../font-awesome-4.7.0/css/font-awesome.min.css'
