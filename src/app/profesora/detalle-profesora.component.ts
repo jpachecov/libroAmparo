@@ -16,6 +16,6 @@ export class DetalleProfesor {
 	profesor:Profesor;
 
 	constructor(private libroService:LibroService){
-		this.profesor = libroService.getLibroAmparo().autora;
+		this.profesor = libroService.getLibroAmparo("").autora;
 	}
 }
