@@ -6,7 +6,7 @@
 
 #top-picasso #picasso {
     display: block;
-    width: calc(100% - 300px);
+    width: calc(100% - var(--ancho-menu));
     height: 125px;
     background-position: 50% 40%;
     background-size: cover;
@@ -140,7 +140,7 @@ footer{
 	height: 70px;
 	background: #822727;
 	bottom: 0px;
-	z-index: 1000;
+	z-index: 1;
 	border-top: solid 1px #cacaca;
 }
 footer div {

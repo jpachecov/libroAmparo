@@ -1,9 +1,17 @@
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
 	#top-picasso #picasso {
 		width: 100%;
 		height: 50px;
 	}
 
+	.menu-hide .ham {
+		margin-top: 50px;
+		padding-right: 19px;
+	}
+
+	.menu-hide {
+		background: transparent;
+	}
 }

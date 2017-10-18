@@ -1,7 +1,7 @@
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 	footer{
 		/* HAcer animacion hasta 200px cuando se llegue al final scroll */
-		height: 50px;
+		height: 55px;
 	}
 	footer h4 {
 		font-size: 10px;
@@ -14,9 +14,8 @@
 	}
 
 	.footer .imagenes-escudos {
-		width: 100px;
-		padding-left: 40px;
-		padding-right: 10px;
+		width: 48%;
+		padding: 3px 0px;
 		border: none;
 		display: inline-block;
 		vertical-align: middle;
@@ -27,22 +26,32 @@
 		width: 50%;
 
 	}
+	.footer .imagenes-escudos > div > a {
+		display: inline-flex;
+		width: 100%;
 
+	}
 	.footer .imagenes-escudos > div > a > img {
 		display: block;
 		width: 40px;
 		margin: 0 auto;
 		float: left;
+		padding: 0 25px;
 	}
-
+	#logo-unam a img{
+		padding: 0px 0px 0px 17px;
+	}
+	#logo-ciencias img{
+		padding: 0px 17px 0px 0px;		
+	}
 	#datos-profa {
-		width: calc(100% - 230px);
-		padding-left: 0px;
+		width: 50%;
+		padding: 0px;
 		float: right;
 	}
 	#datos-profa h3 {
 		width: 100%;
-		font-size: 12px;
+		font-size: 11px;
 		float: left;
 
 	}
@@ -50,7 +59,7 @@
 		display: inline-block;
 		width: 100%;
 		color:white;
-		font-size: 9px;
+		font-size: 8px;
 		float: right;
 	}
 	/* font awesome */
@@ -72,7 +81,7 @@
 
 }
 
-@media (min-width: 700px) and (max-width: 1170px) {
+@media (min-width: 768px) and (max-width: 1170px) {
 	.footer {
 
 	}

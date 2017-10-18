@@ -98,15 +98,19 @@ export class AppComponent implements OnInit{
     });
 
 
+    var styles = window.getComputedStyle(document.getElementsByClassName("container")[0]);
+    var anchomenu = styles.getPropertyValue('--ancho-menu'); //get
+    var anchoMenu = parseInt(anchomenu);
+
     // Padding del contenido del captitulo
     $(".contenido-capitulo").velocity({
-      paddingLeft: "470px",
+      paddingLeft: anchoMenu + 50,
     }, {
       duration: 180
     });
 
 
-    if($(window).width() >= 800){
+    if($(window).width() > 768){
 
       // Padding del footer
       $(".footer").velocity({
@@ -116,11 +120,13 @@ export class AppComponent implements OnInit{
       });
 
 
+
+
       // Ancho de imagen piccasso
       $("#picasso").velocity({
-        width: "80%",
+        width: $(window).width() - anchoMenu,
       }, {
-        duration: 250
+        duration: 200
       });
 
     }
@@ -161,10 +167,36 @@ export class AppComponent implements OnInit{
 
   hideMenu():void {
     console.log("hideMenu");
+
+
+    if($(window).width() >= 768){
+
+      // Padding del footer
+      $(".footer").velocity({
+        paddingLeft: "100px",
+      }, {
+        duration: 200,
+        easing : [.07,.83,.89,.94],
+      });
+
+      //document.body.style.setProperty('--ancho-menu', "500px");//set
+      
+      // Ancho de imagen piccasso
+      $("#picasso").velocity({
+        width: "100%",
+      }, {
+        duration: 200,
+        easing : [.07,.83,.89,.94],
+      });
+
+    }
+
+
+
     $(".menu-capitulos").velocity({
        translateX: "-250px",
     }, {
-      enqueue : true,
+      enqueue : false,
       duration: 200,
       easing : [.07,.83,.89,.94],
       complete: function(){
@@ -176,32 +208,10 @@ export class AppComponent implements OnInit{
 
     // Padding del contenido del captitulo
     $(".contenido-capitulo").velocity({
-      paddingLeft: "280px",
+      paddingLeft: 5 + 100,
     }, {
-      duration: 250
+      duration: 200
     });
-
-
-
-
-    if($(window).width() >= 800){
-
-      // Padding del footer
-      $(".footer").velocity({
-        paddingLeft: "100px",
-      }, {
-        duration: 250
-      });
-
-      // Ancho de imagen piccasso
-      $("#picasso").velocity({
-        width: "97%",
-      }, {
-        duration: 250
-      });
-
-    }
-
   }
 
 }

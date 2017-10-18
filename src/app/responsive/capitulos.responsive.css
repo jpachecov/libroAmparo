@@ -1,7 +1,7 @@
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 	.contenido-capitulo {
-	    padding: 0 30px !important;
-	    padding-left: 50px !important;
+	    padding: 0 40px !important;
+	    padding-left: 40px !important;
 	}
 	.shadow {
 		padding-top: 85px;
@@ -26,8 +26,8 @@
 }
 
 
-@media (min-width: 700px) and (max-width: 1170px) {
+@media (min-width: 768px) and (max-width: 1170px) {
 	.contenido-capitulo {
-		padding: 0 100px 350px 10px !important;
+		padding: 0 100px 350px var(--ancho-menu);
 	}
 }
