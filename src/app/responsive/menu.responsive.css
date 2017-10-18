@@ -1,6 +1,12 @@
 @media (max-width: 700px) {
+
+	.cont-pic {
+
+		display: none;
+	}
 	.menu-capitulos{
 		width: 300px;
+		border: none;
 	}
 
 	.cont-caps h3 {

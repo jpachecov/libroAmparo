@@ -15,6 +15,6 @@ import { Libro } from '../libro/libro';
 export class HomeComponent {
 	libro:Libro;
 	constructor(private libroService: LibroService){
-		this.libro = this.libroService.getLibroAmparo();
+		this.libro = this.libroService.getLibroAmparo("");
 	}
 }

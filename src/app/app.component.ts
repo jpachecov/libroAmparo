@@ -23,6 +23,7 @@ declare var $ :any;
   templateUrl: './app.component.html',
   styleUrls: [
     './app.component.css',
+    '/responsive/app.component.responsive.css',
     'responsive/menu.responsive.css',
     'responsive/footer.responsive.css',
     '../font-awesome-4.7.0/css/font-awesome.min.css'
@@ -96,12 +97,6 @@ export class AppComponent implements OnInit{
       }
     });
 
-    if($(window).width() >= 500){
-      console.log("baja icono")
-      this.bajaIcono();
-
-    }
-
 
     // Padding del contenido del captitulo
     $(".contenido-capitulo").velocity({
@@ -110,12 +105,25 @@ export class AppComponent implements OnInit{
       duration: 180
     });
 
-    // Padding del footer
-    $(".footer").velocity({
-      paddingLeft: "330px",
-    }, {
-      duration: 180
-    });
+
+    if($(window).width() >= 800){
+
+      // Padding del footer
+      $(".footer").velocity({
+        paddingLeft: "330px",
+      }, {
+        duration: 180
+      });
+
+
+      // Ancho de imagen piccasso
+      $("#picasso").velocity({
+        width: "80%",
+      }, {
+        duration: 250
+      });
+
+    }
 
   }
 
@@ -166,11 +174,6 @@ export class AppComponent implements OnInit{
       }
     });
 
-    if($(window).width() <= 500){
-      this.subeIcono();
-
-    }
-
     // Padding del contenido del captitulo
     $(".contenido-capitulo").velocity({
       paddingLeft: "280px",
@@ -178,12 +181,26 @@ export class AppComponent implements OnInit{
       duration: 250
     });
 
-    // Padding del footer
-    $(".footer").velocity({
-      paddingLeft: "100px",
-    }, {
-      duration: 250
-    });
+
+
+
+    if($(window).width() >= 800){
+
+      // Padding del footer
+      $(".footer").velocity({
+        paddingLeft: "100px",
+      }, {
+        duration: 250
+      });
+
+      // Ancho de imagen piccasso
+      $("#picasso").velocity({
+        width: "97%",
+      }, {
+        duration: 250
+      });
+
+    }
 
   }
 

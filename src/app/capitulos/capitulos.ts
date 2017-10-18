@@ -76,7 +76,7 @@ export const CAPITULOS: Capitulo[] = [
 			{
 				nombre:'Documentación de la clase Punto',
 				descripcion:'',
-				ruta:'javadoc.zip',
+				ruta:'docsPunto.tar.gz',
 				tipo:'html'
 			},
 			{
@@ -112,7 +112,7 @@ export const CAPITULOS: Capitulo[] = [
 			{
 				nombre:'Documentación de la clase Hora',
 				descripcion:'',
-				ruta:'javadoc.zip',
+				ruta:'docsHora.tar.gz',
 				tipo:'html'
 			}	
 		]

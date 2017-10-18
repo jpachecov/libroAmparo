@@ -24,6 +24,7 @@ h3,h4{
 }
 
 .shadow {
+    float: left;
     padding-top: 120px;
     padding-bottom: 100px;
 }

@@ -1,7 +1,7 @@
 @media (max-width: 700px) {
 	footer{
 		/* HAcer animacion hasta 200px cuando se llegue al final scroll */
-		height: 90px;
+		height: 50px;
 	}
 	footer h4 {
 		font-size: 10px;
@@ -9,10 +9,15 @@
 	}
 
 	.footer {
-		padding-left: 50px !important;
+		padding-top: 0px;
+		padding-left: 0px;
 	}
+
 	.footer .imagenes-escudos {
-		width: 100%;
+		width: 100px;
+		padding-left: 40px;
+		padding-right: 10px;
+		border: none;
 		display: inline-block;
 		vertical-align: middle;
 	}
@@ -25,24 +30,28 @@
 
 	.footer .imagenes-escudos > div > a > img {
 		display: block;
-		width: 60px;
+		width: 40px;
 		margin: 0 auto;
+		float: left;
 	}
 
 	#datos-profa {
-		width: 100%;
-		padding-left: 40px;
+		width: calc(100% - 230px);
+		padding-left: 0px;
+		float: right;
 	}
 	#datos-profa h3 {
 		width: 100%;
 		font-size: 12px;
+		float: left;
 
 	}
 	#datos-profa span {
 		display: inline-block;
 		width: 100%;
 		color:white;
-		font-size: 10px;
+		font-size: 9px;
+		float: right;
 	}
 	/* font awesome */
 	#datos-profa span i {

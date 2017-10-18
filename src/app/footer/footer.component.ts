@@ -16,6 +16,6 @@ import { LibroService } from '../servicios/libros-service';
 export class Footer {
 	profesor: Profesor;
 	constructor(private libroService:LibroService){
-		this.profesor = libroService.getLibroAmparo().autora;
+		this.profesor = libroService.getLibroAmparo("").autora;
 	}
 }

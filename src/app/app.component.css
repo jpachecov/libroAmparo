@@ -6,10 +6,11 @@
 
 #top-picasso #picasso {
     display: block;
-    width: 100%;
+    width: calc(100% - 300px);
     height: 125px;
     background-position: 50% 40%;
     background-size: cover;
+    float: right;
 }
 
 .menu-capitulos {
@@ -139,7 +140,7 @@ footer{
 	height: 70px;
 	background: #822727;
 	bottom: 0px;
-	z-index: 50;
+	z-index: 1000;
 	border-top: solid 1px #cacaca;
 }
 footer div {
