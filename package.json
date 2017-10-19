@@ -2,7 +2,7 @@
   "name": "libro-amparo",
   "version": "0.0.0",
   "license": "MIT",
-  "main" : "app.js",
+  "main": "app.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,19 +10,19 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall" : "ng build --aot -prod"
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
-  "engines":{
-    "node" : "~6.11.2",
-    "npm" : "~3.10.10"
+  "engines": {
+    "node": "~6.11.2",
+    "npm": "~3.10.10"
   },
   "dependencies": {
-    "@angular/cli": "1.2.7",
     "@angular/animations": "^4.0.0",
+    "@angular/cli": "1.2.7",
     "@angular/common": "^4.0.0",
-    "@angular/compiler-cli": "^4.0.0",
     "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
     "@angular/core": "^4.0.0",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
@@ -32,6 +32,8 @@
     "core-js": "^2.4.1",
     "express": "^4.15.4",
     "grunt-cli": "^1.2.0",
+    "hammer-timejs": "^1.1.0",
+    "hammerjs": "^2.0.8",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.14"
   },
