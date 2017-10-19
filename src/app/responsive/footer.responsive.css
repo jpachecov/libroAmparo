@@ -27,7 +27,7 @@
 
 	}
 	.footer .imagenes-escudos > div > a {
-		display: inline-flex;
+		display: inline-block;
 		width: 100%;
 
 	}
@@ -39,10 +39,10 @@
 		padding: 0 25px;
 	}
 	#logo-unam a img{
-		padding: 0px 0px 0px 17px;
+		padding: 0px 0px 0px 35px;
 	}
 	#logo-ciencias img{
-		padding: 0px 17px 0px 0px;		
+		padding: 0px 17px 0px 10px;		
 	}
 	#datos-profa {
 		width: 50%;
