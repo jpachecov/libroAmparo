@@ -66,12 +66,37 @@ box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
 }
 
 
+.imagenes-escudos {
+	width: 75%;
+	padding: 32px 0px;
+	float: none;
+	margin: 0 auto;
+
+}
+
+.imagenes-escudos div {
+	display: inline-block;
+	width: calc(50% - 1px);
+}
+
+.imagenes-escudos div a {
+	display: block;
+	width: 100%;
+}
+
+.imagenes-escudos div a img {
+	display: block;
+	width: 52px;
+	float: none;
+	margin: 0 auto;
+}
 
 /*
 Imagen de menu picasso
 */
 
 .cont-pic{
+	height: 125px;
 	background: #822727;
 	border-bottom: solid 2px #822727;
 }
@@ -173,6 +198,7 @@ Para las animaciones
 	padding: 13px;
 	font-size: 25px !important;
 	color:#822727;
+	padding-right: 7px;
 }
 .menu-hide .close-menu {
 	display: none;

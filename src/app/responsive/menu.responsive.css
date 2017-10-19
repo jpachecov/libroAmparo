@@ -2,8 +2,19 @@
 
 	.cont-pic {
 
-		display: none;
+		display: block;
+		height: 50px;
 	}
+	.imagenes-escudos {
+		width: 78%;
+		padding: 5px 0px;
+
+	}
+
+	.imagenes-escudos div a img {
+		width: 35px;
+	}
+
 	.menu-capitulos{
 		width: 300px;
 		border: none;

@@ -76,6 +76,14 @@ export class AppComponent implements OnInit{
     this.libro = this.libroService.getLibroAmparo("practicas");
   }
 
+  onSelectCap(capitulo: Capitulo): void {
+    this.onSelect(capitulo);
+    var that = this;
+    setTimeout(function(){
+      that.hideMenu();
+    }, 200);
+  }
+
   onSelect(capitulo : Capitulo) : void {
       this.capituloSel = capitulo;
       this.router.navigate(['/capitulo', this.capituloSel.id]);
@@ -195,7 +203,7 @@ export class AppComponent implements OnInit{
 
 
     $(".menu-capitulos").velocity({
-       translateX: "-250px",
+       translateX: "-265px",
     }, {
       enqueue : false,
       duration: 200,
