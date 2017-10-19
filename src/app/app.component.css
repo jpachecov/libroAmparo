@@ -22,6 +22,7 @@
 	z-index: 100;
 	border-right: solid 1px #cacaca;
 	background: white;
+	transform: translateX(0px);
  /**   
 -webkit-box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
 -moz-box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);

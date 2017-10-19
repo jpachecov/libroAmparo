@@ -224,45 +224,58 @@ export class AppComponent implements OnInit{
   startY: number = 0;
 
   onPanStart(event: any): void {
-
+/*
     console.log("onPanStart");
     event.preventDefault();
     this.startX = this.x;
     this.startY = this.y;
+  */
   }
 
 
   onPan(event: any): void {
-
+/*
     event.preventDefault();
     this.x = this.startX + event.deltaX;
     this.y = this.startY + event.deltaY;
-    console.log("x= " + this.x);
-    console.log("y= " + this.y);
+
 
     var styles = window.getComputedStyle(document.getElementsByClassName("container")[0]);
     var anchomenu = styles.getPropertyValue('--ancho-menu'); //get
     var anchoMenu = parseInt(anchomenu);
+
+
+
+    var style = window.getComputedStyle($('.menu-capitulos')[0]);  // Need the DOM object
+    var matrix = new WebKitCSSMatrix(style.webkitTransform);
+
+
+    console.log("x= " + this.x);
+    console.log("y= " + this.y);
+    var delta = matrix.m41 + this.x;
+    $(".menu-capitulos").css("transform", "translateX(" + delta + "px)");
+
     
     //Se mueve a la izq
     if(this.x < 0) {
-      if(this.x < -10){
-         this.hideMenu();
-//      $(".menu-capitulos").css("transform", "translateX(" + this.x + "px)")
+
+
+      //translateX
+      console.log(matrix.m41); 
+
+      if(matrix.m41 <= 0){  
+        $(".menu-capitulos").css("transform", "translateX(0px)")
       }
     }
     //Se mueve a la der
     if(this.x > 0) {
 
-      if(this.x > 10){
-        this.showMenu();
+      if(matrix.m41 > anchoMenu - 50){
+        $(".menu-capitulos").css("transform", "translateX(" + (anchoMenu - 50) + "px)");
       }
     }
 
-    //$(".menu-capitulos").css("transform", "translateX(" + this.x + "px)");
     //console.log($(".menu-capitulos").css("",));
-  }
-  panCancel(event: any): void {
-    console.log("cancel");
+    */
   }
 }
