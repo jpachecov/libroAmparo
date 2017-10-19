@@ -237,8 +237,8 @@ export class AppComponent implements OnInit{
     event.preventDefault();
     this.x = this.startX + event.deltaX;
     this.y = this.startY + event.deltaY;
-    //console.log("x= " + this.x);
-    //console.log("y= " + this.y);
+    console.log("x= " + this.x);
+    console.log("y= " + this.y);
 
     var styles = window.getComputedStyle(document.getElementsByClassName("container")[0]);
     var anchomenu = styles.getPropertyValue('--ancho-menu'); //get
@@ -246,8 +246,9 @@ export class AppComponent implements OnInit{
     
     //Se mueve a la izq
     if(this.x < 0) {
-      if(this.x < 10){
+      if(this.x < -10){
          this.hideMenu();
+//      $(".menu-capitulos").css("transform", "translateX(" + this.x + "px)")
       }
     }
     //Se mueve a la der
@@ -260,5 +261,8 @@ export class AppComponent implements OnInit{
 
     //$(".menu-capitulos").css("transform", "translateX(" + this.x + "px)");
     //console.log($(".menu-capitulos").css("",));
+  }
+  panCancel(event: any): void {
+    console.log("cancel");
   }
 }
