@@ -1,6 +1,6 @@
 <div class="container">
 	<!--<app-header></app-header>-->
-	<header class="menu-capitulos" >
+	<header class="menu-capitulos" (panstart)="onPanStart($event)" (panmove)="onPan($event)">
 		<div class="cont-pic">
 			<!-- <a href="/" class="picasso" [ngStyle]="{'background-image': 'url(assets/la_cocina.JPG)'}">
 			</a> -->			
@@ -15,7 +15,7 @@
 		<div class="cont-caps">
 			<h3>Capítulos</h3>
 			<ul id="lista-capitulos">
-				<li *ngFor="let capitulo of libro.capitulos" (click)="onSelect(capitulo)">
+				<li *ngFor="let capitulo of libro.capitulos" (click)="onSelect(capitulo);hideMenu()">
 					<span>
 						<label [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}</label>
 						<a>{{capitulo.nombre}}</a>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import 'hammerjs';
+import 'hammer-timejs';
 
 import {
   trigger,
@@ -9,7 +11,6 @@ import {
   group,
   query
 } from '@angular/animations';
-
 
 import { Capitulo } from './capitulos/capitulo';
 import { Libro } from './libro/libro';
@@ -214,4 +215,50 @@ export class AppComponent implements OnInit{
     });
   }
 
+
+
+  x: number = 0;
+  y: number = 0;
+
+  startX: number = 0;
+  startY: number = 0;
+
+  onPanStart(event: any): void {
+
+    console.log("onPanStart");
+    event.preventDefault();
+    this.startX = this.x;
+    this.startY = this.y;
+  }
+
+
+  onPan(event: any): void {
+
+    event.preventDefault();
+    this.x = this.startX + event.deltaX;
+    this.y = this.startY + event.deltaY;
+    //console.log("x= " + this.x);
+    //console.log("y= " + this.y);
+
+    var styles = window.getComputedStyle(document.getElementsByClassName("container")[0]);
+    var anchomenu = styles.getPropertyValue('--ancho-menu'); //get
+    var anchoMenu = parseInt(anchomenu);
+    
+    //Se mueve a la izq
+    if(this.x < 0) {
+      if(this.x < 10){
+         this.hideMenu();
+      }
+    }
+    //Se mueve a la der
+    if(this.x > 0) {
+
+      if(this.x > 10){
+        this.showMenu();
+      }
+    }
+
+    //$(".menu-capitulos").css("transform", "translateX(" + this.x + "px)");
+    //console.log($(".menu-capitulos").css("",));
+  }
 }
