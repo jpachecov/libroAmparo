@@ -6,13 +6,23 @@
 		height: 50px;
 	}
 	.imagenes-escudos {
-		width: 78%;
+		width: 74%;
 		padding: 5px 0px;
 
 	}
 
 	.imagenes-escudos div a img {
 		width: 35px;
+	}
+
+	#logo-unam img {
+		float: left;
+		padding-left: 0px !important; 
+	}
+
+	#logo-ciencias img {
+		float: right;
+		padding: 0px !important;
 	}
 
 	.menu-capitulos{

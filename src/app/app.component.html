@@ -22,19 +22,21 @@
 		<i
 			class="fa fa-times close-menu" 
 			aria-hidden="true"
-			(click)="hideMenu()"
+			(tap)="onClose($event)"
 		></i>
-		<i class="fa fa-bars ham" (click)="showMenu()" aria-hidden="true"></i>
+		<i class="fa fa-bars ham" (tap)="onOpen($event)" aria-hidden="true"></i>
 		<div class="cont-caps">
 			<h3>Capítulos</h3>
-			<ul id="lista-capitulos">
-				<li *ngFor="let capitulo of libro.capitulos" (click)="onSelectCap(capitulo)">
-					<span>
-						<label [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}</label>
-						<a>{{capitulo.nombre}}</a>
-					</span>
-				</li>
-			</ul>
+			<div class="swiṕe-container" (swipeup)="subeCaps($event)" (swipedown)="bajaCaps($event)">
+				<ul id="lista-capitulos">
+					<li *ngFor="let capitulo of libro.capitulos" (tap)="onSelectCap($event,capitulo)">
+						<span>
+							<label [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}</label>
+							<a>{{capitulo.nombre}}</a>
+						</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</header><!--
 	-->

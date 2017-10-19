@@ -76,12 +76,13 @@ export class AppComponent implements OnInit{
     this.libro = this.libroService.getLibroAmparo("practicas");
   }
 
-  onSelectCap(capitulo: Capitulo): void {
+  onSelectCap(event: any, capitulo: Capitulo): void {
+    event.preventDefault();
     this.onSelect(capitulo);
     var that = this;
     setTimeout(function(){
       that.hideMenu();
-    }, 200);
+    }, 100);
   }
 
   onSelect(capitulo : Capitulo) : void {
@@ -285,5 +286,22 @@ export class AppComponent implements OnInit{
 
     //console.log($(".menu-capitulos").css("",));
     */
+  }
+
+  onClose(event: any): void {
+    event.preventDefault();
+    this.hideMenu();
+  }
+  onOpen(event: any): void {
+    event.preventDefault();
+    this.showMenu();
+  }
+  bajaCaps(event: any): void {
+    event.preventDefault();
+    console.log("swipedown");
+  } 
+  subeCaps(event: any): void {
+    event.preventDefault();
+    console.log("swipeup");
   }
 }
