@@ -13,31 +13,6 @@
 		padding-left: 0px;
 	}
 
-	.footer .imagenes-escudos {
-		width: 48%;
-		padding: 3px 0px;
-		border: none;
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	.footer .imagenes-escudos > div {
-		display: inline-block;
-		width: 50%;
-
-	}
-	.footer .imagenes-escudos > div > a {
-		display: inline-block;
-		width: 100%;
-
-	}
-	.footer .imagenes-escudos > div > a > img {
-		display: block;
-		width: 40px;
-		margin: 0 auto;
-		float: left;
-		padding: 0 25px;
-	}
 	#logo-unam a img{
 		padding: 0px 0px 0px 35px;
 	}
@@ -45,9 +20,11 @@
 		padding: 0px 17px 0px 10px;		
 	}
 	#datos-profa {
-		width: 50%;
-		padding: 0px;
-		float: right;
+		display: block;
+		width: 80%;
+		padding-left: 25px;
+		float: none;
+		margin: 0 auto;
 	}
 	#datos-profa h3 {
 		width: 100%;
@@ -85,22 +62,13 @@
 	.footer {
 
 	}
-	.footer .imagenes-escudos {
-		width: 140px;
-	}
-
-	.footer .imagenes-escudos > div {
-	}
-
-	.footer .imagenes-escudos > div > a > img {
-	}
 
 	#datos-profa {
 		width: 350PX;
 	}
 	#datos-profa h3 {
 		width: 45%;
-		font-size: 12px;
+		font-size: 15px;
 	}
 	#datos-profa span {
 		width: 49%;		

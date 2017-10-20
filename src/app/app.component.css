@@ -37,14 +37,14 @@ box-shadow: 2px 2px 23px 0px rgba(133,129,133,1);
 }
 .menu-capitulos ul {
 	list-style: none;
-	padding: 10px 10px 10px 40px;
+	padding: 10px 0px 10px 26px;
 }
 
 .menu-capitulos ul li {
 	cursor: pointer;
 	display: block;
 	font-family: sans-serif;
-	padding: 5px 0px;
+	padding: 7px 0px;
 }
 
 .menu-capitulos ul li:hover span {
@@ -135,6 +135,7 @@ Contenedor capitulos
 	font-family: 'Playfair Display', serif; 
 	color: #822727;
 	font-size: 24px;
+	padding-left: 30px;
 }
 #lista-capitulos li span{
     font-weight: 400;
