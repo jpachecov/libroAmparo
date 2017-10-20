@@ -62,20 +62,21 @@ export class AppComponent implements OnInit{
   libro: Libro;
   capituloSel : Capitulo;
 
+  // init cycle 
   ngOnInit() : void {
-
+    this.libro = this.libroService.getLibroAmparo("practicas");
+    this.libroService.getLibro();
     var color_principal = "#822727";
-
     $(".cont-pic").css("background", color_principal);
     $("footer").css("background", color_principal);
-
-    
   }
   
-  constructor(private libroService:LibroService, private router: Router){
-    this.libro = this.libroService.getLibroAmparo("practicas");
-  }
+  // Constructor
+  constructor(private libroService:LibroService, private router: Router){}
 
+  /**
+  * Manejador para cuando seleccionan un capitulo
+  */
   onSelectCap(event: any, capitulo: Capitulo): void {
     event.preventDefault();
     this.onSelect(capitulo);

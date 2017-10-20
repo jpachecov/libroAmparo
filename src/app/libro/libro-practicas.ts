@@ -4,9 +4,9 @@ import {amparo} from '../profesora/amparo';
 
 
 export const libroPracticas:Libro = {
-	id:"1",
-	titulo:"Introducción al desarrollo de programas con Java",
-	edicion:"Tercera edición practicas",
+	id:"2",
+	titulo:"Introducción al desarrollo de programas con Java  Pŕacticas",
+	edicion:"Tercera edición",
 	capitulos: CAPITULOS_PRACTICAS,
 	autora: amparo
 };
