@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LibroService } from '../servicios/libros-service';
 import { Libro } from '../libro/libro';
 
@@ -12,9 +12,12 @@ import { Libro } from '../libro/libro';
     '../../font-awesome-4.7.0/css/font-awesome.min.css'
   ],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 	libro:Libro;
-	constructor(private libroService: LibroService){
-		this.libro = this.libroService.getLibroAmparo("");
-	}
+
+  ngOnInit():void {
+    this.libroService.getLibro().then(libro => this.libro = libro);
+  }
+
+	constructor(private libroService: LibroService){}
 }

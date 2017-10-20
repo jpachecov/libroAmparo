@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Profesor } from '../profesora/profesor';
 import { LibroService } from '../servicios/libros-service';
 
@@ -13,9 +13,16 @@ import { LibroService } from '../servicios/libros-service';
 	]	
 })
 
-export class Footer {
+export class Footer implements OnInit{
+
 	profesor: Profesor;
+	
+	ngOnInit(): void {
+		
+	}
+
 	constructor(private libroService:LibroService){
-		this.profesor = libroService.getLibroAmparo("").autora;
+		this.libroService.getLibro().then(libro => this.profesor = libro.autora);
+
 	}
 }

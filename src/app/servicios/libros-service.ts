@@ -5,6 +5,7 @@ import { libroAmparo } from '../libro/libro-amparo';
 import { libroPracticas } from '../libro/libro-practicas';
 
 import { Http, RequestOptionsArgs }    from '@angular/http';
+import { environment } from '../../environments/environment';
 
 
   
@@ -14,7 +15,12 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class LibroService {
 
-	constructor(private http: Http){}
+	private api_url = "";
+
+	constructor(private http: Http){
+		console.log( environment );
+		this.api_url = environment.apiUrl;
+	}
 
 	getLibroAmparo(tipo:String): Libro {
 		var libro:Libro = libroAmparo;
@@ -27,7 +33,7 @@ export class LibroService {
 		return libro;
 	}
 	getCapitulos():Promise<Capitulo[]>{
-		return Promise.resolve(libroAmparo.capitulos);
+		return this.getLibro().then(l => l.capitulos);
 	}
 	getCapitulo(id:number): Promise<Capitulo> {
 		return this.getCapitulos().then(caps => caps.find(cap => cap.id === id));
@@ -36,10 +42,9 @@ export class LibroService {
 
 	getLibro(): Promise<Libro>{
 
-	  return this.http.get("https://polar-river-16969.herokuapp.com/api/libro")
+	  return this.http.get(this.api_url + "/libro")
          .toPromise()
-//         .then(response => response.json().data as Libro)
-         .then(response => {console.log(response)})         
+         .then(response => response.json().data as Libro)
          .catch(this.handleErrorBook);
 	}
 

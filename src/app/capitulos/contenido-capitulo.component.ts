@@ -42,12 +42,21 @@ import 'rxjs/add/operator/switchMap';
 export class ContenidoCapitulo implements OnInit{
 	libro:Libro;
 	@Input() capituloSel:Capitulo;
-	constructor(private libroService:LibroService, private route: ActivatedRoute, private location: Location){
-		this.libro = this.libroService.getLibroAmparo("");
-	}
+	constructor(private libroService:LibroService, private route: ActivatedRoute, private location: Location){}
 	ngOnInit(): void {
-		  this.route.paramMap
-    .switchMap((params: ParamMap) => this.libroService.getCapitulo(+params.get('id')))
-    .subscribe(hero => this.capituloSel = hero);
+		
+    this.route.paramMap
+    .switchMap((params: ParamMap) => (
+
+
+     this.libroService.getCapitulo(+params.get('id')))
+
+     // this.libroService.getLibro().then(libro => libro.capitulos.find(cap => cap.id == +params.get('id'))
+
+
+
+    )
+    .subscribe(cap => this.capituloSel = cap);
+    this.libroService.getLibro().then(libro => this.libro = libro);
 	}
 }
