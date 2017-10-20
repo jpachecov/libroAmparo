@@ -81,9 +81,9 @@ export class AppComponent implements OnInit{
     event.preventDefault();
     this.onSelect(capitulo);
     var that = this;
-    //setTimeout(function(){
+    setTimeout(function(){
       that.hideMenu();
-    //}, 100);
+    }, 100);
   }
 
   onSelect(capitulo : Capitulo) : void {
