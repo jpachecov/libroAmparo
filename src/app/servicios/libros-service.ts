@@ -42,10 +42,13 @@ export class LibroService {
 
 	getLibro(): Promise<Libro>{
 
+		return Promise.resolve(libroAmparo);
+/*
 	  return this.http.get(this.api_url + "/libro")
          .toPromise()
          .then(response => response.json().data as Libro)
          .catch(this.handleErrorBook);
+*/
 	}
 
 	private handleErrorBook(error: any): Promise<any> {

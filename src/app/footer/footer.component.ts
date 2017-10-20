@@ -22,7 +22,8 @@ export class Footer implements OnInit{
 	}
 
 	constructor(private libroService:LibroService){
-		this.libroService.getLibro().then(libro => this.profesor = libro.autora);
+		//this.libroService.getLibro().then(libro => this.profesor = libro.autora);
+		this.profesor = this.libroService.getLibroAmparo("").autora;
 
 	}
 }
