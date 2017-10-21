@@ -234,12 +234,12 @@ export class AppComponent implements OnInit{
   startY: number = 0;
 
   onPanStart(event: any): void {
-/*
+
     console.log("onPanStart");
     event.preventDefault();
     this.startX = this.x;
     this.startY = this.y;
-  */
+  
   }
 
 
@@ -260,33 +260,37 @@ export class AppComponent implements OnInit{
     var matrix = new WebKitCSSMatrix(style.webkitTransform);
 
 
-    console.log("x= " + this.x);
-    console.log("y= " + this.y);
-    var delta = matrix.m41 + this.x;
+    //console.log("x= " + this.x);
+    //console.log("y= " + this.y);
+    //var delta = matrix.m41 + this.x;
+    var delta = this.x;
+    console.log(matrix.m41);
+    if(matrix.m41 >= 0){
+
+      console.log("Derecha");
+      return;
+    } else {
+      console.log("izquierda");
+    }
+
+
+
     $(".menu-capitulos").css("transform", "translateX(" + delta + "px)");
 
-    
+
+
     //Se mueve a la izq
     if(this.x < 0) {
 
-
-      //translateX
-      console.log(matrix.m41); 
-
-      if(matrix.m41 <= 0){  
-        $(".menu-capitulos").css("transform", "translateX(0px)")
-      }
     }
     //Se mueve a la der
     if(this.x > 0) {
 
-      if(matrix.m41 > anchoMenu - 50){
-        $(".menu-capitulos").css("transform", "translateX(" + (anchoMenu - 50) + "px)");
-      }
     }
+    
 
-    //console.log($(".menu-capitulos").css("",));
-    */
+*/
+
   }
 
   onClose(event: any): void {

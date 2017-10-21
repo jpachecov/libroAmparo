@@ -27,7 +27,7 @@
 		<i class="fa fa-bars ham" (tap)="onOpen($event)" aria-hidden="true"></i>
 		<div class="cont-caps">
 			<h3>Capítulos</h3>
-			<div class="swiṕe-container" (swipeup)="subeCaps($event)" (swipedown)="bajaCaps($event)">
+			<div class="swiṕe-container" (panstart)="onPanStart($event)" (panmove)="onPan($event)">
 				<ul id="lista-capitulos">
 					<li *ngFor="let capitulo of libro.capitulos" (tap)="onSelectCap($event,capitulo)">
 						<span>
