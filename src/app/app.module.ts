@@ -40,7 +40,29 @@ import { LibroService } from './servicios/libros-service';
         path: 'introduccion',
         component: HomeComponent
       },
-      { path: '', redirectTo: '/introduccion', pathMatch: 'full' },
+
+
+      
+      {
+        path: 'teoria/capitulo/:id',
+        component: ContenidoCapitulo
+      },
+      {
+        path: 'teoria/introduccion',
+        component: HomeComponent
+      },
+      {
+        path: 'practicas/capitulo/:id',
+        component: ContenidoCapitulo
+      },
+      {
+        path: 'practicas/introduccion',
+        component: HomeComponent
+      },
+
+      { path: 'teoria', redirectTo: 'teoria/introduccion', pathMatch: 'full' },
+      { path: 'practicas', redirectTo: 'practicas/introduccion', pathMatch: 'full' },
+
       { path: '**', component: PageNotFound }
     ])
   ],

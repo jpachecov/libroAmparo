@@ -1156,6 +1156,7 @@ router.get('/libro', (req, res) => {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     response.data = libroProgra;
     res.json(response);
+
 });
 
 module.exports = router;
