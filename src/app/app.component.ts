@@ -15,7 +15,7 @@ import {
 import { Capitulo } from './capitulos/capitulo';
 import { Libro } from './libro/libro';
 import { LibroService } from './servicios/libros-service';
-import { Router } from '@angular/router';
+import { Router,ActivatedRoute } from '@angular/router';
 
 declare var $ :any;
 
@@ -59,6 +59,7 @@ declare var $ :any;
 })
 export class AppComponent implements OnInit{
 
+  private parentUrl:string;
   libro: Libro;
   capituloSel : Capitulo;
 
@@ -71,8 +72,13 @@ export class AppComponent implements OnInit{
     $("footer").css("background", color_principal);
   }
   
+
+
   // Constructor
-  constructor(private libroService:LibroService, private router: Router){}
+  constructor(private libroService:LibroService, private router: Router, private route: ActivatedRoute){
+
+    //console.log(this.route.parent.url);
+  }
 
   /**
   * Manejador para cuando seleccionan un capitulo
@@ -88,7 +94,9 @@ export class AppComponent implements OnInit{
 
   onSelect(capitulo : Capitulo) : void {
       this.capituloSel = capitulo;
-      this.router.navigate(['/capitulo', this.capituloSel.id]);
+      this.router.navigate(['capitulo', this.capituloSel.id]);
+      var sub = this.router.routerState.root;
+      console.log(sub);
   }
 
 

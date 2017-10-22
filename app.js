@@ -20,22 +20,35 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // API location
 app.use('/api', api);
 
-
+/*
 app.get('/teoria', (req, res) => {
 	res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
+/*
+app.get('/teoria/*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
+*/
 
 
-app.get('/practicas', (req, res) => {
+/*
+
+app.get('/practicas/*', (req, res) => {
 	res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
+*/
+
 /*
+app.get('*', (req, res) => {
+	res.send("Hola mundo!");
+});
+*/
 
 app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
-*/
+
 const port = process.env.PORT || '3001';
 app.set('port', port);
 

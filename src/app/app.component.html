@@ -31,10 +31,25 @@
 				<ul id="lista-capitulos">
 					<li *ngFor="let capitulo of libro.capitulos" (tap)="onSelectCap($event,capitulo)">
 						<span>
+						
 							<label [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}</label>
-							<a>{{capitulo.nombre}}</a>
+							<a >{{capitulo.nombre}}</a>
+											
 						</span>
 					</li>
+
+					
+<!--
+					<li *ngFor="let capitulo of libro.capitulos">
+						<span>
+						
+							<label [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}</label>
+							<a [routerLink]="['capitulo']">{{capitulo.nombre}}</a>
+											
+
+						</span>
+					</li>-->
+
 				</ul>
 			</div>
 		</div>

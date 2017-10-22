@@ -32,6 +32,13 @@ import { LibroService } from './servicios/libros-service';
     BrowserAnimationsModule,
     HttpModule,
     RouterModule.forRoot([
+
+/*   
+      {
+        path: '',
+        redirectTo: 'introduccion',
+        pathMatch: 'full'
+      },
       {
         path: 'capitulo/:id',
         component: ContenidoCapitulo
@@ -39,29 +46,79 @@ import { LibroService } from './servicios/libros-service';
       {
         path: 'introduccion',
         component: HomeComponent
-      },
+      }, 
+*/
 
-
-      
       {
-        path: 'teoria/capitulo/:id',
+        path: '',
+        redirectTo: 'introduccion',
+        pathMatch: 'full'
+      },
+      {
+        path: 'capitulo/:id',
         component: ContenidoCapitulo
       },
       {
-        path: 'teoria/introduccion',
+        path: 'introduccion',
         component: HomeComponent
-      },
+      }, 
+
+
+
+/*
       {
-        path: 'practicas/capitulo/:id',
-        component: ContenidoCapitulo
-      },
-      {
-        path: 'practicas/introduccion',
-        component: HomeComponent
+        path: '',
+        redirectTo: 'teoria',
+        pathMatch: 'full'
       },
 
-      { path: 'teoria', redirectTo: 'teoria/introduccion', pathMatch: 'full' },
-      { path: 'practicas', redirectTo: 'practicas/introduccion', pathMatch: 'full' },
+      { path: 'teoria', 
+        component: HomeComponent, 
+  
+
+        children : [
+          {
+            path: '',
+            redirectTo: 'introduccion',
+            pathMatch: 'full'
+          },
+          {
+            path: 'capitulo/:id',
+            component: ContenidoCapitulo
+          },
+          {
+            path: 'introduccion',
+            component: HomeComponent
+          },          
+        
+          ]
+        
+        },
+
+*/
+
+      { path: 'practicas', 
+        component: HomeComponent,  
+
+/*
+        children : [
+          {
+            path: '',
+            redirectTo: 'practicas/introduccion',
+            pathMatch: 'full'
+          },
+          {
+            path: 'capitulo/:id',
+            component: ContenidoCapitulo
+          },
+          {
+            path: 'introduccion',
+            component: HomeComponent
+          },
+
+        ]
+*/        
+      },
 
       { path: '**', component: PageNotFound }
     ])
