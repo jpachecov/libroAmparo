@@ -17,6 +17,34 @@ import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { LibroService } from './servicios/libros-service';
 
+
+var ruta2 = [
+  {
+    path: ':version',
+    component: HomeComponent,
+    children:[
+      {
+        path: '',
+        redirectTo: 'introduccion',
+        pathMatch: 'full'
+      },
+      {
+        path: 'capitulo/:id',
+        component: ContenidoCapitulo
+      },
+      {
+        path: 'introduccion',
+        component: HomeComponent
+      },
+
+    ]
+  },
+ 
+
+  { path: '**', component: PageNotFound }
+
+];
+
 @NgModule({
   declarations: [
     AppComponent,
