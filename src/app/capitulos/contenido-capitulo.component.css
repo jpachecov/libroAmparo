@@ -72,3 +72,14 @@ Avenir,Tahoma,sans-serif
 #lista-archivos li i {
     color: #822727;
 }
+
+#proceso {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+}
+#proceso img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}

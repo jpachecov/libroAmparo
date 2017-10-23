@@ -5,6 +5,9 @@
 		<h4 id="edicion">{{libro.edicion}}</h4>
 		<h3 id="titulo-cap">{{capituloSel.id}}. {{capituloSel.nombre}}</h3>
 		<p class="resumen">{{capituloSel.resumen}}</p>
+		<div *ngIf="capituloSel.id == 1" id="proceso">
+			<img src="assets/iconos/proceso_programacion.png">
+		</div>
 		<ul id="lista-archivos">
 			<li *ngFor="let archivo of capituloSel.listaArchivos">
 				<i class="fa fa-file-code-o" aria-hidden="true"></i>
