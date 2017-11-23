@@ -36,7 +36,7 @@
 		</p>
 
 		<ul id="lista-capitulos">
-			<li *ngFor="let capitulo of libro.capitulos">
+			<li *ngFor="let capitulo of filtroCapitulos(libro.capitulos)">
 				<a [routerLink]="['/capitulo', capitulo.id]" id="ico">
 					<img src="assets/iconos/{{capitulo.id}}.png">
 				</a>

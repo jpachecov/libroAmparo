@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LibroService } from '../servicios/libros-service';
 import { Libro } from '../libro/libro';
+import { Capitulo } from '../capitulos/capitulo';
 
 @Component({
   selector: 'home-page',
@@ -21,4 +22,9 @@ export class HomeComponent implements OnInit{
   }
 
 	constructor(private libroService: LibroService){}
+  
+  filtroCapitulos(capitulos: Capitulo[]){
+    return capitulos.filter(c => c.id != 0);
+  }
+
 }
