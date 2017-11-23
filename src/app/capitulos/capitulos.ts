@@ -2,7 +2,9 @@ import { Capitulo } from './capitulo';
 import { DetalleArchivo } from './DetalleArchivo';
 export const CAPITULOS: Capitulo[] = [
 
-	
+	{
+		id: 0, nombre: 'Introducción', resumen:'', listaArchivos:null,
+	},	
 	{	id: 1, nombre: 'Proceso de programación',
 		resumen: 'En este capítulo se detalla cada una de las actividades necesarias para escribir programas que funcionen adecuadamente como solución a un problema particular. Estas actividades incluyen la definición del problema, el diseño de la solución, así como la codificación, la depuración, las pruebas, la validación, la documentación y el mantenimiento de la solución.', 
 		listaArchivos: null	

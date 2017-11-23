@@ -94,7 +94,12 @@ export class AppComponent implements OnInit{
 
   onSelect(capitulo : Capitulo) : void {
       this.capituloSel = capitulo;
-      this.router.navigate(['capitulo', this.capituloSel.id]);
+
+      if(capitulo.id === 0){
+        this.router.navigate(['introduccion']);
+      } else {
+        this.router.navigate(['capitulo', this.capituloSel.id]);
+      }
       var sub = this.router.routerState.root;
       console.log(sub);
   }
