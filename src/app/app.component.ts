@@ -65,11 +65,19 @@ export class AppComponent implements OnInit{
 
   // init cycle 
   ngOnInit() : void {
+    //this.hideMenu();
+
     this.libro = this.libroService.getLibroAmparo("");
     //this.libroService.getLibro().then(libro => this.libro = libro);
     var color_principal = "#822727";
     $(".cont-pic").css("background", color_principal);
     $("footer").css("background", color_principal);
+
+    var that = this;
+    setTimeout(function(){
+      that.hideMenu();
+    }, 100);
+
   }
   
 
@@ -78,6 +86,7 @@ export class AppComponent implements OnInit{
   constructor(private libroService:LibroService, private router: Router, private route: ActivatedRoute){
 
     //console.log(this.route.parent.url);
+
   }
 
   /**
