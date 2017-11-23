@@ -72,6 +72,11 @@
 
 @media (min-width: 1024px) {
 
+	.contenido-capitulo {
+		padding-right: 50px !important;
+	
+	}
+
 
 	#lista-capitulos {
 		width: 100%;
