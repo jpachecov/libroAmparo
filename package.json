@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --aot -prod",
-    "magic" : "install & ng build --aot -prod & node app.js"
+    "magic" : "npm install && ng build --aot -prod && node app.js"
   },
   "private": true,
   "engines": {
