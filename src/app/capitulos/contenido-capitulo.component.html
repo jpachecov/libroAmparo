@@ -8,6 +8,58 @@
 		<div *ngIf="capituloSel.id == 1" id="proceso">
 			<img src="assets/iconos/proceso_programacion.png">
 		</div>
+
+		<div *ngIf="capituloSel.id == 2" id="tipos-primitivos">
+			<p class="resumen">En la siguiente tabla se muestran los tipos primitivos en Java:</p>
+			<table>
+			  <tr>
+			    <th>Tipo</th>
+			    <th>Valor</th>
+			    <th>Tamaño</th>
+			  </tr>
+			  <tr>
+			    <td>boolean</td>
+			    <td>true o false</td>
+			    <td>1 bit</td>
+			  </tr>
+			  <tr>
+			    <td>char</td>
+			    <td>caracter unicode</td>
+			    <td>16 bits</td>
+			  </tr>
+			  <tr>
+			    <td>byte</td>
+			    <td>Entero con signo</td>
+			    <td>8 bits</td>
+			  </tr>
+			  <tr>
+			    <td>short</td>
+			    <td>Entero con signo</td>
+			    <td>16 bits</td>
+			  </tr>
+			  <tr>
+			    <td>int</td>
+			    <td>Entero con signo</td>
+			    <td>32 bits</td>
+			  </tr>
+			  <tr>
+			    <td>long</td>
+			    <td>Entero con signo</td>
+			    <td>64 bits</td>
+			  </tr>
+			  <tr>
+			    <td>float</td>
+			    <td>Decimal</td>
+			    <td>32 bits</td>
+			  </tr>
+			  <tr>
+			    <td>double</td>
+			    <td>Decimal</td>
+			    <td>64 bits</td>
+			  </tr>			  			  
+			</table>
+		</div>
+
 		<ul id="lista-archivos">
 			<li *ngFor="let archivo of capituloSel.listaArchivos">
 				<i class="fa fa-file-code-o" aria-hidden="true"></i>
