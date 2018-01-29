@@ -15,7 +15,7 @@
   },
   "private": true,
   "engines": {
-    "node": "~6.11.2",
+    "node": "~9.4.0",
     "npm": "~3.10.10"
   },
   "dependencies": {
@@ -60,3 +60,8 @@
     "typescript": "~2.3.3"
   }
 }
+/*  
+
+    "node": "~6.11.2",
+
+  "node": "~9.4.0"*/
