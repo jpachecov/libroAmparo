@@ -28,6 +28,7 @@
 	margin: 0 auto;
 	border: solid 3px #a19e9e;
 	border-radius: 100%;
+	height: auto;
 }
 
 #lista-capitulos li #id {

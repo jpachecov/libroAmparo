@@ -3,7 +3,16 @@
 	<div class="shadow">
 		<h3 id="titulo-libro">{{libro.titulo}}</h3>
 		<h4 id="edicion">{{libro.edicion}}</h4>
-		<h3 id="titulo-cap">{{capituloSel.id}}. {{capituloSel.nombre}}</h3>
+
+		<div id="ico-nombre">
+			
+			<a [routerLink]="['/capitulo', capituloSel.id]" id="ico">
+				<img src="assets/iconos/{{capituloSel.id}}.png">
+			</a>
+
+			<h3 id="titulo-cap">{{capituloSel.nombre}}</h3>
+
+		</div>
 		<p class="resumen">{{capituloSel.resumen}}</p>
 		<div *ngIf="capituloSel.id == 1" id="proceso">
 			<img src="assets/iconos/proceso_programacion.png">
@@ -65,7 +74,8 @@
 				<i class="fa fa-file-code-o" aria-hidden="true"></i>
 				<a href="assets/archivos/capitulo_{{capituloSel.id}}/{{archivo.ruta}}" download>{{archivo.nombre}}</a>
 			</li>
-		</ul>		
+		</ul>
+
 	</div>
 
 </div>
